@@ -63,7 +63,7 @@ header {
 
   border-top: .3em solid #ff4700;
   box-shadow: 0 2px 2px rgba(50, 50, 50, 0.15);
-  background-color: rgba(0, 0, 0, .6);
+  background-color: rgba(0, 0, 0, 1);
 }
 
 header > h1 { 
@@ -142,6 +142,12 @@ h3 { font-size: 1.8em; color: #ff4700; text-decoration: underline;}
   border: 1px solid #ddd;
   background-color: rgba(238, 238, 255, 0.1);
   padding: 1em;
+
+  white-space: pre-wrap;                 /* CSS3 browsers  */
+  white-space: -moz-pre-wrap !important; /* 1999+ Mozilla  */
+  white-space: -pre-wrap;                /* Opera 4 thru 6 */
+  white-space: -o-pre-wrap;              /* Opera 7 and up */
+  word-wrap: break-word;                 /* IE 5.5+ and up */
 }
 
 .post ul, .post ol {
