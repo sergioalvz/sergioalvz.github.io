@@ -91,7 +91,7 @@ header > h1 a:link, header > h1 a:visited {
 
 .content_wrapper {
   margin: 0 auto;
-  padding: 10em 0 0 0;
+  padding: 10em 0 1em 0;
 
   width: 80%;
   max-width: 800px;
