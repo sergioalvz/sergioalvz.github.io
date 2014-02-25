@@ -12,33 +12,37 @@
         <!-- Custom CSS -->
         <link rel="stylesheet" href="/css/main.css">
 
+        <!-- Fonts -->
+        <link href='http://fonts.googleapis.com/css?family=Alegreya+Sans+SC:100,100italic' rel='stylesheet' type='text/css'>
+        <link href='http://fonts.googleapis.com/css?family=Oxygen:400,300,700' rel='stylesheet' type='text/css'>
+
     </head>
     <body>
+        <header>
+          <h1><a href="/">{{ site.name }}</a></h1>
+        </header>
 
         <div class="site">
-          <div class="header">
-            <h1 class="title"><a href="/">{{ site.name }}</a></h1>
-            <a class="extra" href="/">home</a>
-          </div>
-
-          {{ content }}
-
-          <div class="footer">
-            <div class="contact">
-              <p>
-                Sergio Álvarez<br />
-                Software && Web engineer<br />
-                sergioalvarezsuarez@gmail.com
-              </p>
-            </div>
-            <div class="contact">
-              <p>
-                <a href="https://github.com/sergio-alvarez">github.com/sergio-alvarez</a><br />
-                <a href="https://twitter.com/varezHH">twitter.com/varezHH</a><br />
-              </p>
-            </div>
+          <div class="content_wrapper">
+            {{ content }}
           </div>
         </div>
+
+        <footer>
+          <div class="contact">
+            <p>
+              Sergio Álvarez<br />
+              <strong>Software &amp;&amp; Web engineer</strong><br />
+              sergioalvarezsuarez@gmail.com
+            </p>
+          </div>
+          <div class="contact">
+            <p>
+              <a href="https://github.com/sergio-alvarez">github.com/sergio-alvarez</a><br />
+              <a href="https://twitter.com/varezHH">twitter.com/varezHH</a><br />
+            </p>
+          </div>
+        </footer>
 
     </body>
 </html>

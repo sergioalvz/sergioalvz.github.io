@@ -23,7 +23,7 @@ IMHO, working with XML in Java is no easy and I remembered some interesting poin
 
 Some of the benefits of using Scala (which perhaps may not be applied to your particular case) are:
 
-## XML native support
+### XML native support
 Working and serialize an object in XML by using Scala is absurdly simple:
 
 {% highlight scala %}
@@ -34,8 +34,8 @@ Working and serialize an object in XML by using Scala is absurdly simple:
  * Author: Sergio Álvarez
  * Date: 09/2013
  */
-class Tweet(username: String, location: String, timezone: String,latitude: String,
-  longitude: String, text: String) {
+class Tweet(username: String, location: String, timezone: String,
+  latitude: String, longitude: String, text: String) {
   
   def toXML =
     <tweet>
@@ -63,12 +63,12 @@ class Tweet(username: String, location: String, timezone: String,latitude: Strin
 
 The Scala support for working with literals allows us to code the objects' XML representation easily. As well as its later deserialization.
 
-## Compile to JVM code
+### Compile to JVM code
 This is specially interesting because allows Java developers to use libraries which they are familiar with in their Java programs.
 
 Actually, Scala has another good points for Java developers because, although it is a functional language, it allows imperative programming and its object-oriented philosophy is really similar to Java. These reasons give to Java developers the ability of starting to write Scala code quickly (which does not imply that they can write high quality Scala code quickly...)
 
-## Summary
+### Summary
 Just for making a brief summary about the exposed in this post:
 
 * CSV is not a good choice for storing large collections of tweets with complex content
