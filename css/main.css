@@ -114,6 +114,8 @@ footer {
 footer > div {
   padding: 1em 0;
   margin-left: 1em;
+
+  float: left;
 }
 
 footer > div:last-child {
@@ -122,6 +124,15 @@ footer > div:last-child {
 
 footer .contact a {
   color: #8085C1;
+}
+
+/* CLEAR BOTH */
+footer:after{ 
+  content: ".";
+  visibility: hidden;
+  display: block;
+  height: 0;
+  clear: left;
 }
 
 /*****************************************************************************/
