@@ -2,7 +2,7 @@
 layout: post
 title:  "Working with large tweets' collections"
 date:   2013-09-09 18:57:07
-categories: tfm falcon
+tags:   tfm falcon
 ---
 
 These days I’ve been facing the first challenges working on my Master Thesis. As I’ve been explaining in other posts, to be able of achieve the main goal of the Thesis I have to create a system which can work with large collections of tweets in order to analyze them.
