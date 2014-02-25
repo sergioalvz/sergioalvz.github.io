@@ -26,7 +26,7 @@ Some of the benefits of using Scala (which perhaps may not be applied to your p
 ### XML native support
 Working and serialize an object in XML by using Scala is absurdly simple:
 
-{% highlight scala %}
+{% highlight scala linenos %}
 /**
  * Project: falcon
  * Package: org.falcon.model
