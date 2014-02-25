@@ -118,10 +118,6 @@ footer > div {
   float: left;
 }
 
-footer > div:last-child {
-  padding: 0;
-}
-
 footer .contact a {
   color: #8085C1;
 }
