@@ -97,9 +97,6 @@ header > h1 a:link, header > h1 a:visited {
 
   width: 80%;
   max-width: 700px;
-
-  text-align: justify;  
-  line-height: 1.5em;
 }
 
 strong {
@@ -117,32 +114,20 @@ footer > div {
   width: 185px;
   margin: 0 auto;
   text-align: center;
-
 }
 
-footer .contact a {
-  color: #8085C1;
-}
 
-/* CLEAR BOTH */
-footer:after{ 
-  content: ".";
-  visibility: hidden;
-  display: block;
-  height: 0;
-  clear: left;
-}
+h2 { font-size: 2em; line-height: 1.5em; }
+h3 { font-size: 1.8em; color: #ff4700; text-decoration: underline; }
+
+.meta { font-size: 1.2em; }
 
 /*****************************************************************************/
 /*
 /* Posts
 /*
 /*****************************************************************************/
-
 .post { font-family: 'Oxygen', sans-serif; }
-
-h2 { font-size: 2em; line-height: 1em; }
-h3 { font-size: 1.8em; color: #ff4700; text-decoration: underline;}
 
 .post p, .post li {
   font-size: 1.6em;
