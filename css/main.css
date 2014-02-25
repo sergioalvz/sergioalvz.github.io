@@ -129,7 +129,7 @@ footer .contact a {
 
 .post { font-family: 'Oxygen', sans-serif; }
 
-h2 { font-size: 2em; }
+h2 { font-size: 2em; line-height: 1em; }
 h3 { font-size: 1.8em; color: #ff4700; text-decoration: underline;}
 
 .post p, .post li {
