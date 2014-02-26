@@ -40,14 +40,22 @@ a:visited { color: #a0a; }
 }
 
 .posts li {
+  padding: 2em;
+  margin-bottom: 2em;
+
+  background-color: rgb(247, 247, 245);
+  box-shadow: .1em .1em .5em #888888;
+
   font-size: 1.6em;
   line-height: 1.5em;
 }
 
+.posts li:last-child { margin-bottom: 0; }
+
 .posts span {
   color: #aaa;
-  font-family: Monaco, "Courier New", monospace;
-  font-size: 80%;
+  font-family: 'Shadows Into Light Two', cursive;
+  font-size: 1em;
 }
 
 /*****************************************************************************/
@@ -61,19 +69,19 @@ header {
   width: 100%;
   padding: 1em 0;
 
-  font-weight: 100; 
-  font-family: 'Alegreya Sans SC', sans-serif; 
+  font-weight: 100;
+  font-family: 'Alegreya Sans SC', sans-serif;
 
   border-top: .3em solid #ff4700;
   box-shadow: 0 2px 2px rgba(50, 50, 50, 0.15);
   background-color: rgba(0, 0, 0, 1);
 }
 
-header > h1 { 
+header > h1 {
   margin-left: .5em;
   float: left;
 
-  font-size: 2em;   
+  font-size: 2em;
 }
 
 header > h1 a {
@@ -120,7 +128,7 @@ footer > div {
 h2 { font-size: 2em; line-height: 1.5em; }
 h3 { font-size: 1.8em; color: #ff4700; text-decoration: underline; }
 
-.meta { font-size: 1.2em; }
+.meta { font-size: 1.5em; font-family: 'Shadows Into Light Two', cursive; }
 
 /*****************************************************************************/
 /*
@@ -136,6 +144,8 @@ h3 { font-size: 1.8em; color: #ff4700; text-decoration: underline; }
 
 /* standard */
 .post pre {
+  font-size: 1.2em;
+
   border: 1px solid #ddd;
   background-color: rgba(238, 238, 255, 0.1);
   padding: 1em;
@@ -152,7 +162,6 @@ h3 { font-size: 1.8em; color: #ff4700; text-decoration: underline; }
 }
 
 .post code {
-  font-size: 1.5em;
   border: 1px solid #ddd;
   background-color: rgba(238, 238, 255, 0);
   padding: 0 .2em;

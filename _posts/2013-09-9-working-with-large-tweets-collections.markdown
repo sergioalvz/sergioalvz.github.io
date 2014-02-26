@@ -26,7 +26,7 @@ Some of the benefits of using Scala (which perhaps may not be applied to your p
 ### XML native support
 Working and serialize an object in XML by using Scala is absurdly simple:
 
-{% highlight scala %}
+````scala
 /**
  * Project: falcon
  * Package: org.falcon.model
@@ -35,7 +35,7 @@ Working and serialize an object in XML by using Scala is absurdly simple:
  * Date: 09/2013
  */
 class Tweet(username: String, location: String, timezone: String, latitude: String, longitude: String, text: String) {
-  
+
   def toXML =
     <tweet>
       <username>
@@ -58,7 +58,7 @@ class Tweet(username: String, location: String, timezone: String, latitude: Stri
       </text>
     </tweet>
 }
-{% endhighlight %}
+````
 
 The Scala support for working with literals allows us to code the objects' XML representation easily. As well as its later deserialization.
 
