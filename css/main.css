@@ -81,6 +81,14 @@ h3 { font-size: 2.5em; color: #ff4700; }
 
 .meta { font-size: 1.5em; font-family: 'Shadows Into Light Two', cursive; }
 
+.content_wrapper {
+  margin: 0 auto;
+  padding: 10em 0 2em 0;
+
+  width: 80%;
+  max-width: 700px;
+}
+
 /*****************************************************************************/
 /*
 /* Home
@@ -94,12 +102,10 @@ h3 { font-size: 2.5em; color: #ff4700; }
 .about {
   padding: .5em 0;
   margin-bottom: 2em;
-
   font-size: 2em;
   font-family: 'Oxygen', sans-serif;
-
   color: rgb(255, 255, 255);
-  background-color: rgb(82, 77, 77)
+  background: url('/assets/wild_oliva_bg.png');
 }
 .about > div p { margin: .25em 0; }
 .about img     { max-width: 150px; }
@@ -143,7 +149,7 @@ h3 { font-size: 2.5em; color: #ff4700; }
 }
 
 .last_post span, li.post_excerpt span {
-  color: #aaa;
+  color: #5E5E5E;
   font-family: 'Shadows Into Light Two', cursive;
   font-size: 1em;
 }
@@ -153,8 +159,8 @@ h3 { font-size: 2.5em; color: #ff4700; }
 /* Archive
 /*
 /*****************************************************************************/
-.archive_content > h1 {
-  font-size: 2em;
+.content_wrapper > h1 {
+  font-size: 3em;
   margin-bottom: 1em;
 }
 
@@ -168,14 +174,6 @@ ul.posts {
 /* Posts
 /*
 /*****************************************************************************/
-.post_content, .archive_content {
-  margin: 0 auto;
-  padding: 10em 0 2em 0;
-
-  width: 80%;
-  max-width: 700px;
-}
-
 .post { font-family: 'Oxygen', sans-serif; }
 
 .post img { max-width: 100%; }
@@ -223,4 +221,25 @@ ul.posts {
 
 .post pre.terminal code {
   background-color: #333;
+}
+
+/*****************************************************************************/
+/*
+/* 404
+/*
+/*****************************************************************************/
+p.error {
+  font-size: 3em;
+  font-family: 'Shadows Into Light Two', cursive;
+  text-align: center;
+}
+
+p.error > a, p.error > a:link, p.error > a:visited {
+  font-size: 1;
+  font-weight: bold;
+  color: rgb(0, 0, 0);
+}
+
+p.error img {
+  max-height: 1em;
 }
