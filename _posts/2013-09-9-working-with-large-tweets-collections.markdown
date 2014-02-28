@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Working with large tweets' collections"
-date:   2013-09-09 18:57:07
+date:   2013-09-09 18:57:07 +0100
 tags:   tfm falcon
 ---
 

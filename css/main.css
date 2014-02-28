@@ -155,21 +155,7 @@ h3 { font-size: 2.5em; color: #ff4700; }
   font-size: 1em;
 }
 
-.post_excerpt span.tag {
-  padding: .1em .5em;
-  border-radius: .5em;
-  box-shadow: .1em .1em .1em #888888;
-
-  background-color: #3498db;
-  color: rgb(255, 255, 255);
-
-  font-family: 'Oxygen', sans-serif;
-  font-size: .8em;
-}
-
-.post_excerpt > a:first-of-type {
-  margin-right: .5em;
-}
+.post_excerpt > a:first-of-type { margin-right: .5em; }
 
 /*****************************************************************************/
 /*
@@ -191,8 +177,7 @@ ul.posts {
 /* Posts
 /*
 /*****************************************************************************/
-.post { font-family: 'Oxygen', sans-serif; }
-
+.post     { font-family: 'Oxygen', sans-serif; }
 .post img { max-width: 100%; }
 
 .post p, .post li {
@@ -215,9 +200,7 @@ ul.posts {
   word-wrap: break-word;                 /* IE 5.5+ and up */
 }
 
-.post ul, .post ol {
-  margin-left: 1.35em;
-}
+.post ul, .post ol { margin-left: 1.35em; }
 
 .post code {
   border: 1px solid #ddd;
@@ -225,9 +208,7 @@ ul.posts {
   padding: 0 .2em;
 }
 
-.post pre code {
-  border: none;
-}
+.post pre code { border: none; }
 
 /* terminal */
 .post pre.terminal {
@@ -236,8 +217,18 @@ ul.posts {
   color: #FFF;
 }
 
-.post pre.terminal code {
-  background-color: #333;
+.post pre.terminal code { background-color: #333; }
+
+span.tag {
+  padding: .1em .5em;
+  border-radius: .5em;
+  box-shadow: .1em .1em .1em #888888;
+
+  background-color: #3498db;
+  color: rgb(255, 255, 255);
+
+  font-family: 'Oxygen', sans-serif;
+  font-size: .8em;
 }
 
 /*****************************************************************************/
@@ -257,6 +248,4 @@ p.error > a, p.error > a:link, p.error > a:visited {
   color: rgb(0, 0, 0);
 }
 
-p.error img {
-  max-height: 1em;
-}
+p.error img { max-height: 1em; }
