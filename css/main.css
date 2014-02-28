@@ -23,7 +23,6 @@ a:visited { color: #a0a; }
 /* Common
 /*
 /*****************************************************************************/
-
 header {
   position: fixed;
   width: 100%;
@@ -109,7 +108,9 @@ h3 { font-size: 2.5em; color: #ff4700; }
 }
 .about > div p { margin: .25em 0; }
 .about img     { max-width: 150px; }
-.about > div   { width: 100%; text-align: center; }
+.about > div   { text-align: center; }
+.about > div:first-child { width: 100%; }
+.about > div:last-child  { padding: 0 .5em; }
 
 .last_post_container {
   width: 80%;
@@ -123,20 +124,20 @@ h3 { font-size: 2.5em; color: #ff4700; }
   font-size: 2em;
 }
 
-.last_post_container p:last-child {
+.last_post_container > p:last-child {
   font-size: 1.6em;
   font-family: 'Oxygen', sans-serif;
 }
 
-.last_post_container p:last-child a:link {
+.last_post_container > p:last-child a:link {
   color: rgb(0, 0, 0);
 }
 
-.last_post_container p:last-child a:visited {
+.last_post_container > p:last-child a:visited {
   color: rgb(0, 0, 0);
 }
 
-.last_post, li.post_excerpt {
+.post_excerpt {
   padding: 2em;
   margin-bottom: 2em;
 
@@ -148,10 +149,26 @@ h3 { font-size: 2.5em; color: #ff4700; }
   box-shadow: .1em .1em .5em #888888;
 }
 
-.last_post span, li.post_excerpt span {
+.post_excerpt span {
   color: #5E5E5E;
   font-family: 'Shadows Into Light Two', cursive;
   font-size: 1em;
+}
+
+.post_excerpt span.tag {
+  padding: .1em .5em;
+  border-radius: .5em;
+  box-shadow: .1em .1em .1em #888888;
+
+  background-color: #3498db;
+  color: rgb(255, 255, 255);
+
+  font-family: 'Oxygen', sans-serif;
+  font-size: .8em;
+}
+
+.post_excerpt > a:first-of-type {
+  margin-right: .5em;
 }
 
 /*****************************************************************************/
