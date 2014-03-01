@@ -42,6 +42,12 @@ header > h1 {
 
   font-size: 3em;
 }
+@media (max-width: 310px){
+  header > h1 {
+    margin: .75em 0 0 .5em;
+    font-size: 1.8em;
+  }
+}
 
 header > h1 a {
   font-size: 1em;
