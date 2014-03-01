@@ -39,4 +39,4 @@ which produces a prompt with this scheme:
 ````
 The information about Mercurial branch, bookmark and status is only visible when the current directory is a Mercurial repository.
 
-![Screenshot]({{ site.url }}/assets/colors-prompt-hg.png)
+![Screenshot](/assets/posts/colors-prompt-hg.png)

@@ -37,10 +37,10 @@ header {
 }
 
 header > h1 {
-  margin: .5em 0 0 .5em;
+  margin: .25em 0 0 .5em;
   float: left;
 
-  font-size: 2em;
+  font-size: 3em;
 }
 
 header > h1 a {
@@ -52,6 +52,8 @@ header > h1 a:link, header > h1 a:visited {
   color: rgb(255, 255, 255);
   text-decoration: none;
 }
+
+header > h1 a:hover { color: #ff4700;}
 
 .site {
   width: 100%;
@@ -76,7 +78,8 @@ footer > div {
 }
 
 h2 { font-size: 3em; line-height: 1.5em; }
-h3 { font-size: 2.5em; color: #ff4700; }
+h3 { font-size: 2.5em; color: #ff4700; margin: 1em 0; }
+h4 { font-size: 2em; color: rgb(0, 0, 0); margin: 1em 0; }
 
 .meta { font-size: 1.5em; font-family: 'Shadows Into Light Two', cursive; }
 
@@ -129,13 +132,11 @@ h3 { font-size: 2.5em; color: #ff4700; }
   font-family: 'Oxygen', sans-serif;
 }
 
-.last_post_container > p:last-child a:link {
-  color: rgb(0, 0, 0);
-}
+.last_post_container > p:last-child a:link    { color: rgb(0, 0, 0); }
+.last_post_container > p:last-child a:visited { color: rgb(0, 0, 0); }
+.last_post_container > p:last-child a:hover   { color: #ff4700; }
 
-.last_post_container > p:last-child a:visited {
-  color: rgb(0, 0, 0);
-}
+
 
 .post_excerpt {
   padding: 2em;
@@ -177,7 +178,7 @@ ul.posts {
 /* Posts
 /*
 /*****************************************************************************/
-.post     { font-family: 'Oxygen', sans-serif; }
+.post     { font-family: 'Oxygen', sans-serif; margin-bottom: 5em; }
 .post img { max-width: 100%; }
 
 .post p, .post li {
@@ -220,7 +221,7 @@ ul.posts {
 .post pre.terminal code { background-color: #333; }
 
 span.tag {
-  padding: .1em .5em;
+  padding: .5em 1em;
   border-radius: .5em;
   box-shadow: .1em .1em .1em #888888;
 
