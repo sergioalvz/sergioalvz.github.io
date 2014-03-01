@@ -1,12 +1,13 @@
 ---
 layout: post
 title:  "Processing and extracting terms from large datasets of tweets"
+date:   2014-03-01 17:40:00 +0100
 tags:   tfm puma
 ---
 
 Last month was specially productive and I'm developing a nice system for analyzing big datasets of tweets and start to obtain the first results.
 
-As I explained in previous posts (yep... September 2013), I've been saving tweets by using XML because of the CSV complexity for representing tweets' content successfully. Once I had to start to analyze them, I had to implement some kind of XML parser for being able to extract the content of each tweet. By using Scala, working with XML is much more easier than with Java, so by using *pull parsing* and *pattern matching* I wrote code like this:
+As I explained in previous posts (yep... September 2013), I've been saving tweets by using XML because of the CSV complexity for representing tweets' content successfully. Once I had to start to analyze them, I had to implement some kind of XML parser for being able to extract the content of each tweet. By using Scala working with XML is much more easier than with Java and I used *pull parsing* and *pattern matching* for writing code like this:
 
 ````scala
 val reader = new XMLEventReader(Source.fromFile(_path))
@@ -39,7 +40,7 @@ That simple block of code give me the ability of analyze large XML dataset (~8GB
 
 #### Strategy
 
-The main strategy that I'm following for inferencing tweets location by its content is to, roughly, compare the frequency of several terms within two different datasets that I collect with specific characteristics.
+The main strategy that I'm following for inferencing tweets location by its content is to, roughly, compare the frequency of several terms within two different datasets that I collect with specific characteristics, in order to see what terms are more specific from each place by using the likelihood ratio test.
 
 For instance, now I'm specially focused on distinguish Spanish tweets that are posted from Spain to the others posted from anywhere else. To achieve this goal, I used the collector [Falcon](https://github.com/sergio-alvarez/falcon) for retrieving two big dataset. One, from tweets located in Spain. The other, just for tweets written in Spanish.
 
