@@ -1,6 +1,8 @@
-name:         Sergio's Blog
-description:  Software dev experiences
-url:          http://sergioalvarezsuarez.com
-markdown:     redcarpet
-pygments:     true
+name:           Sergio's Blog
+description:    Software dev experiences
+url:            http://sergioalvarezsuarez.com
+markdown:       redcarpet
+pygments:       true
+paginate:       2
+paginate_path:  "archive/page:num"
 

@@ -229,6 +229,7 @@ ul.posts {
 
 span.tag {
   padding: .5em 1em;
+
   border-radius: .5em;
   box-shadow: .1em .1em .1em #888888;
 
@@ -237,6 +238,45 @@ span.tag {
 
   font-family: 'Oxygen', sans-serif;
   font-size: .8em;
+}
+
+/*****************************************************************************/
+/*
+/* Pagination
+/*
+/*****************************************************************************/
+.pagination {
+  text-align: center;
+  font-size: 1.6em;
+  font-family: 'Oxygen', sans-serif;
+}
+
+.pagination .previous, .pagination .next {
+  display: inline-block;
+  width: 5em;
+  padding: .5em 0;
+  margin: 0.25em 0;
+
+  border-radius: 0.25em;
+  box-shadow: .1em .1em .5em #888888;
+
+  text-decoration: none;
+  background-color: rgb(75, 75, 75);
+  color: rgb(255, 255, 255);
+}
+
+.pagination span.previous, .pagination span.next {
+  background-color: rgb(219, 219, 219);
+  color: rgb(163, 163, 163);
+  box-shadow: none;
+}
+
+.pagination a.previous:hover, .pagination a.next:hover {
+  color: #ff4700;
+}
+
+.pagination span.page_number {
+  margin: 0 .5em;
 }
 
 /*****************************************************************************/
