@@ -3,6 +3,6 @@ description:    Software dev experiences
 url:            http://sergioalvarezsuarez.com
 markdown:       redcarpet
 pygments:       true
-paginate:       2
+paginate:       10
 paginate_path:  "archive/page:num"
 
