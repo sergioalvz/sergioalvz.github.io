@@ -186,6 +186,7 @@ ul.posts {
 /*****************************************************************************/
 .post     { font-family: 'Oxygen', sans-serif; margin-bottom: 5em; }
 .post img { max-width: 100%; }
+.post > hr { margin: 1em 0; }
 
 .post p, .post li {
   font-size: 1.6em;
