@@ -1,0 +1,13 @@
+<?xml version="1.0" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg xmlns="http://www.w3.org/2000/svg">
+<metadata>Copyright (C) 2014 by original authors @ fontello.com</metadata>
+<defs>
+<font id="fontello" horiz-adv-x="1000" >
+<font-face font-family="fontello" font-weight="400" font-stretch="normal" units-per-em="1000" ascent="850" descent="-150" />
+<missing-glyph horiz-adv-x="1000" />
+<glyph glyph-name="lightbulb-1" unicode="&#xe800;" d="m0 506q0 143 101 243t243 101t243-101t101-243q0-55-30-121t-71-141t-56-115q-15-39-31-94t-24-82t-27-53t-42-39t-63-11t-64 11t-41 39t-26 53t-25 82t-32 94q-13 43-55 116t-72 140t-29 121z m63 0q0-64 82-213q37-64 52-99l293 0q16 35 53 99q82 151 82 213q0 117-82 199t-199 82t-199-82t-82-199z m93 0q0 78 55 133t133 55q15 0 15-16t-15-16q-65 0-111-45t-45-111q0-15-16-15t-16 15z m67-375q11-33 19-60l213 27q2 12 10 33l-242 0z m29-90q10-35 18-60l154 19q6 16 12 38q2 5 4 15t3 12z m29-89q12-26 25-33t38-7q29 0 43 10t27 45z" horiz-adv-x="687" />
+<glyph glyph-name="inbox" unicode="&#xe802;" d="m0 38l0 218q0 8 2 18l125 469q6 19 22 32t39 12l624 0q22 0 39-12t22-32l125-469q2-10 2-18l0-218q0-53-36-89t-89-37l-750 0q-53 0-89 37t-36 89z m63 0q0-26 18-45t44-18l750 0q25 0 44 18t18 45l0 218l-125 469l-624 0l-125-469l0-218z m58 226l108 375q5 23 29 23l484 0q24 0 29-23l108-375q4-16-5-27t-24-12l-143 0l-45-90q-17-35-57-35l-210 0q-40 0-57 35l-45 90l-143 0q-15 0-24 12t-5 27z m45 24l127 0q39 0 57-36l45-89l210 0l45 89q18 36 57 36l127 0l-92 343l-484 0z" horiz-adv-x="1000" />
+</font>
+</defs>
+</svg>
