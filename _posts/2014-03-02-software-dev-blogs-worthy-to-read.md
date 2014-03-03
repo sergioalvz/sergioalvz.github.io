@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Software dev blogs worthy to read"
+title:  Software dev blogs worthy to read
 date:   2014-03-02
 tags:   dev
 ---
