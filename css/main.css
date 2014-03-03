@@ -129,8 +129,9 @@ h4 { font-size: 2em; color: rgb(0, 0, 0); margin: 1em 0; }
 }
 
 .last_post_container h1 {
+  font-family: 'Bevan', cursive;
   margin-bottom: 1em;
-  font-size: 2em;
+  font-size: 2.5em;
 }
 
 .last_post_container > p:last-child {
@@ -170,6 +171,7 @@ h4 { font-size: 2em; color: rgb(0, 0, 0); margin: 1em 0; }
 /*
 /*****************************************************************************/
 .content_wrapper > h1 {
+  font-family: 'Bevan', cursive;
   font-size: 3em;
   margin-bottom: 1em;
 }
