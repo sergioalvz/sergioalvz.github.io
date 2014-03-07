@@ -18,42 +18,34 @@ a         { color: #00a; }
 a:hover   { color: #000; }
 a:visited { color: #a0a; }
 
-/*****************************************************************************/
-/*
-/* Common
-/*
-/*****************************************************************************/
+/* Common */
 header {
-  position: fixed;
-  z-index: 100;
-
-  width: 100%;
-  height: 50px;
-
-  font-weight: 100;
-  font-family: 'Alegreya Sans SC', sans-serif;
-
+  background-color: rgba(0, 0, 0, 1);
   border-top: .3em solid #ff4700;
   box-shadow: 0 2px 2px rgba(50, 50, 50, 0.15);
-  background-color: rgba(0, 0, 0, 1);
+  font-family: 'Alegreya Sans SC', sans-serif;
+  font-weight: 100;
+  height: 50px;
+  position: fixed;
+  width: 100%;
+  z-index: 100;
 }
 
 header > h1 {
-  margin: .25em 0 0 .5em;
   float: left;
-
   font-size: 3em;
+  margin: .25em 0 0 .5em;
 }
 @media (max-width: 310px){
   header > h1 {
-    margin: .75em 0 0 .5em;
     font-size: 1.8em;
+    margin: .75em 0 0 .5em;
   }
 }
 
 header > h1 a {
-  font-size: 1em;
   color: rgb(255, 255, 255);
+  font-size: 1em;
 }
 
 header > h1 a:link, header > h1 a:visited {
@@ -64,8 +56,8 @@ header > h1 a:link, header > h1 a:visited {
 header > h1 a:hover { color: #ff4700;}
 
 .site {
-  width: 100%;
   background-color: rgb(255, 255, 255);
+  width: 100%;
 }
 
 strong {
@@ -73,16 +65,16 @@ strong {
 }
 
 footer {
-  width: 100%;
-  color: #666;
   border-top: 4px solid rgba(0, 0, 0, .6);
+  color: #666;
   font-size: 1.2em;
+  width: 100%;
 }
 
 footer > div {
-  width: 185px;
   margin: 0 auto;
   text-align: center;
+  width: 185px;
 }
 
 h2 { font-size: 3em; line-height: 1.5em; }
@@ -93,70 +85,86 @@ h4 { font-size: 2em; color: rgb(0, 0, 0); margin: 1em 0; }
 
 .content_wrapper {
   margin: 0 auto;
-  padding: 10em 0 2em 0;
-
-  width: 80%;
   max-width: 700px;
+  padding: 10em 0 2em 0;
+  width: 80%;
 }
 
-/*****************************************************************************/
-/*
-/* Home
-/*
-/*****************************************************************************/
+/* BLOCKS */
+.attention {
+  background-color: rgb(245, 205, 205);
+  border-left: 10px solid rgb(136, 0, 0);
+}
+
+.info {
+  background-color: rgb(245, 205, 205);
+  border-left: 10px solid rgb(136, 0, 0);
+}
+
+.warning {
+  background-color: rgb(252, 255, 182);
+  border-left: 10px solid rgb(255, 224, 0);
+}
+
+.attention p, .info p, .warning p {
+  display: inline;
+}
+
+.attention, .info, .warning {
+  margin: 1.5em 10px;
+  padding: 0.5em 10px;
+  quotes: "\201C""\201D""\2018""\2019";
+}
+
+/* Home */
 .home_wrapper {
-  width: 100%;
   padding: 53px 0 1em;
+  width: 100%;
 }
 
 .about {
-  padding: .5em 0;
-  margin-bottom: 2em;
-  font-size: 2em;
-  font-family: 'Oxygen', sans-serif;
-  color: rgb(255, 255, 255);
   background: url('/assets/wild_oliva_bg.png');
+  color: rgb(255, 255, 255);
+  font-family: 'Oxygen', sans-serif;
+  font-size: 2em;
+  margin-bottom: 2em;
+  padding: .5em 0;
 }
-.about > div p { margin: .25em 0; }
-.about img     { max-width: 150px; }
-.about > div   { text-align: center; }
-.about > div:first-child { width: 100%; }
-.about > div:last-child  { padding: 0 .5em; }
+.about > div p            { margin: .25em 0; }
+.about img                { max-width: 150px; }
+.about > div              { text-align: center; }
+.about > div:first-child  { width: 100%; }
+.about > div:last-child   { padding: 0 .5em; }
 
 .last_post_container {
-  width: 80%;
-  max-width: 700px;
-
   margin: 0 auto;
+  max-width: 700px;
+  width: 80%;
 }
 
 .last_post_container h1 {
   font-family: 'Bevan', cursive;
-  margin-bottom: 1em;
   font-size: 2.5em;
+  margin-bottom: 1em;
 }
 
 .last_post_container > p:last-child {
-  font-size: 1.6em;
   font-family: 'Oxygen', sans-serif;
+  font-size: 1.6em;
 }
 
 .last_post_container > p:last-child a:link    { color: rgb(0, 0, 0); }
 .last_post_container > p:last-child a:visited { color: rgb(0, 0, 0); }
 .last_post_container > p:last-child a:hover   { color: #ff4700; }
 
-
-
 .post_excerpt {
-  padding: 2em;
-  margin-bottom: 2em;
-
+  background-color: rgb(247, 247, 245);
+  box-shadow: .1em .1em .5em #888888;
   font-family: 'Oxygen', sans-serif;
   font-size: 1.6em;
   line-height: 1.5em;
-
-  background-color: rgb(247, 247, 245);
-  box-shadow: .1em .1em .5em #888888;
+  margin-bottom: 2em;
+  padding: 2em;
 }
 
 .post_excerpt span {
@@ -167,11 +175,7 @@ h4 { font-size: 2em; color: rgb(0, 0, 0); margin: 1em 0; }
 
 .post_excerpt > a:first-of-type { margin-right: .5em; }
 
-/*****************************************************************************/
-/*
-/* Archive
-/*
-/*****************************************************************************/
+/* Archive */
 .content_wrapper > h1 {
   font-family: 'Bevan', cursive;
   font-size: 3em;
@@ -179,18 +183,14 @@ h4 { font-size: 2em; color: rgb(0, 0, 0); margin: 1em 0; }
 }
 
 ul.posts {
-  list-style-type: none;
   font-size: 1em;
+  list-style-type: none;
 }
 
-/*****************************************************************************/
-/*
-/* Posts
-/*
-/*****************************************************************************/
-.post     { font-family: 'Oxygen', sans-serif; margin-bottom: 5em; }
-.post img { max-width: 100%; }
-.post > hr { margin: 1em 0; }
+/* Post */
+.post       { font-family: 'Oxygen', sans-serif; margin-bottom: 5em; }
+.post img   { max-width: 100%; }
+.post > hr  { margin: 1em 0; }
 
 .post p, .post li {
   font-size: 1.6em;
@@ -199,24 +199,22 @@ ul.posts {
 
 /* standard */
 .post pre {
-  font-size: 1.2em;
-
-  border: 1px solid #ddd;
   background-color: rgba(238, 238, 255, 0.1);
+  border: 1px solid #ddd;
+  font-size: 1.2em;
   padding: 1em;
-
-  white-space: pre-wrap;                 /* CSS3 browsers  */
   white-space: -moz-pre-wrap !important; /* 1999+ Mozilla  */
-  white-space: -pre-wrap;                /* Opera 4 thru 6 */
   white-space: -o-pre-wrap;              /* Opera 7 and up */
+  white-space: -pre-wrap;                /* Opera 4 thru 6 */
+  white-space: pre-wrap;                 /* CSS3 browsers  */
   word-wrap: break-word;                 /* IE 5.5+ and up */
 }
 
 .post ul, .post ol { margin-left: 1.35em; }
 
 .post code {
-  border: 1px solid #ddd;
   background-color: rgba(238, 238, 255, 0);
+  border: 1px solid #ddd;
   padding: 0 .2em;
 }
 
@@ -224,31 +222,24 @@ ul.posts {
 
 /* terminal */
 .post pre.terminal {
-  border: 1px solid #000;
   background-color: #333;
+  border: 1px solid #000;
   color: #FFF;
 }
 
 .post pre.terminal code { background-color: #333; }
 
 span.tag {
-  padding: .5em 1em;
-
+  background-color: #3498db;
   border-radius: .5em;
   box-shadow: .1em .1em .1em #888888;
-
-  background-color: #3498db;
   color: rgb(255, 255, 255);
-
   font-family: 'Oxygen', sans-serif;
   font-size: .8em;
+  padding: .5em 1em;
 }
 
-/*****************************************************************************/
-/*
-/* Pagination
-/*
-/*****************************************************************************/
+/* Pagination */
 .pagination {
   text-align: center;
   font-size: 1.6em;
@@ -256,17 +247,15 @@ span.tag {
 }
 
 .pagination .previous, .pagination .next {
-  display: inline-block;
-  width: 5em;
-  padding: .5em 0;
-  margin: 0.25em 0;
-
+  background-color: rgb(75, 75, 75);
   border-radius: 0.25em;
   box-shadow: .1em .1em .5em #888888;
-
-  text-decoration: none;
-  background-color: rgb(75, 75, 75);
   color: rgb(255, 255, 255);
+  display: inline-block;
+  margin: 0.25em 0;
+  padding: .5em 0;
+  text-decoration: none;
+  width: 5em;
 }
 
 .pagination span.previous, .pagination span.next {
@@ -283,11 +272,7 @@ span.tag {
   margin: 0 .5em;
 }
 
-/*****************************************************************************/
-/*
-/* 404
-/*
-/*****************************************************************************/
+/* 404 */
 p.error {
   font-size: 3em;
   font-family: 'Shadows Into Light Two', cursive;
