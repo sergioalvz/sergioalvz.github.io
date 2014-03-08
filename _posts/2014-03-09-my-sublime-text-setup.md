@@ -1,6 +1,7 @@
 ---
 layout: post
 title: "My Sublime Text 2 setup"
+date: 2014-03-09
 tags: dev util
 ---
 

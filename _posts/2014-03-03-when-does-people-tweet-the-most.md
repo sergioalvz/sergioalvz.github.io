@@ -1,6 +1,7 @@
 ---
 layout: post
 title: When does people tweet the most?
+date:   2014-03-03
 ---
 
 This weekend I've been collecting some tweets from Spain and UK in order to analyze what are the time slots where they have more activity. This is important because when I'm comparing frequencies from ES-Spain and ES-Global I have to keep in mind that there are also tweets in ES-Global which are actually from Spain too (and probably I need to give them less *priority*).
