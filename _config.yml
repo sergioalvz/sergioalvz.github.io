@@ -5,4 +5,3 @@ markdown:       redcarpet
 pygments:       true
 paginate:       10
 paginate_path:  "archive/page:num"
-

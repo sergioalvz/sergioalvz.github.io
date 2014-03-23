@@ -97,8 +97,8 @@ h4 { font-size: 2em; color: rgb(0, 0, 0); margin: 1em 0; }
 }
 
 .info {
-  background-color: rgb(245, 205, 205);
-  border-left: 10px solid rgb(136, 0, 0);
+  background-color: rgb(221, 245, 205);
+  border-left: 10px solid rgb(60, 136, 0);
 }
 
 .warning {
@@ -203,15 +203,11 @@ ul.posts {
 
 /* standard */
 .post pre {
+  overflow-x: scroll;
   background-color: rgba(238, 238, 255, 0.1);
   border: 1px solid #ddd;
-  font-size: 1.2em;
+  font-size: 1.4em;
   padding: 1em;
-  white-space: -moz-pre-wrap !important; /* 1999+ Mozilla  */
-  white-space: -o-pre-wrap;              /* Opera 7 and up */
-  white-space: -pre-wrap;                /* Opera 4 thru 6 */
-  white-space: pre-wrap;                 /* CSS3 browsers  */
-  word-wrap: break-word;                 /* IE 5.5+ and up */
 }
 
 .post ul, .post ol { margin-left: 1.35em; }
