@@ -193,6 +193,7 @@ ul.posts {
 }
 
 /* Post */
+#twitter-widget-0 { float: right; }
 .post       { font-family: 'Oxygen', sans-serif; margin-bottom: 5em; }
 .post img   { max-width: 100%; }
 .post > hr  { margin: 1em 0; }
