@@ -26,9 +26,9 @@ var MapModule = (function(){
   };
 
   var loadFiles = function(files) {
-    var reader = new FileReader();
     for(var i = 0; i < files.length; i++) {
       var currentFile = files[i];
+      var reader = new FileReader();
       reader.onload = processTsvFile;
       reader.readAsText(currentFile);
     }
