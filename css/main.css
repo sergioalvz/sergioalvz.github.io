@@ -25,7 +25,6 @@ header {
   border-top: .3em solid #ff4700;
   box-shadow: 0 2px 2px rgba(50, 50, 50, 0.15);
   font-family: 'Alegreya Sans SC', sans-serif;
-  font-weight: 400;
   height: 50px;
   position: fixed;
   width: 100%;
@@ -35,6 +34,7 @@ header {
 header > h1 {
   float: left;
   font-size: 3em;
+  font-weight: 400;
   margin: .25em 0 0 .5em;
 }
 @media (max-width: 310px){
@@ -78,10 +78,6 @@ footer > div {
   width: 185px;
 }
 
-h2 { font-size: 3em; line-height: 1.5em; }
-h3 { font-size: 2.5em; color: #ff4700; margin: 1em 0; }
-h4 { font-size: 2em; color: rgb(0, 0, 0); margin: 1em 0; }
-
 .meta { font-size: 1.5em; font-family: 'Shadows Into Light Two', cursive; }
 
 .content_wrapper {
@@ -89,6 +85,30 @@ h4 { font-size: 2em; color: rgb(0, 0, 0); margin: 1em 0; }
   max-width: 700px;
   padding: 10em 0 2em 0;
   width: 80%;
+}
+
+.content_wrapper > h1 {
+  font-family: 'Alegreya Sans SC', sans-serif;
+  font-size: 3em;
+  margin-bottom: 1em;
+}
+
+.content_wrapper > h2 {
+  font-size: 3em;
+  line-height: 1.5em;
+  font-family: 'Oxygen', sans-serif;
+}
+
+.content_wrapper > h3 {
+  font-size: 2.5em;
+  color: #ff4700;
+  margin: 1em 0;
+}
+
+.content_wrapper > h4 {
+ font-size: 2em;
+ color: rgb(0, 0, 0);
+ margin: 1em 0;
 }
 
 /* BLOCKS */
@@ -148,7 +168,7 @@ h4 { font-size: 2em; color: rgb(0, 0, 0); margin: 1em 0; }
 }
 
 .last_post_container h1 {
-  font-family: 'Bevan', cursive;
+  font-family: 'Alegreya Sans SC', sans-serif;
   font-size: 2.5em;
   margin-bottom: 1em;
 }
@@ -181,12 +201,6 @@ h4 { font-size: 2em; color: rgb(0, 0, 0); margin: 1em 0; }
 .post_excerpt > a:first-of-type { margin-right: .5em; }
 
 /* Archive */
-.content_wrapper > h1 {
-  font-family: 'Bevan', cursive;
-  font-size: 3em;
-  margin-bottom: 1em;
-}
-
 ul.posts {
   font-size: 1em;
   list-style-type: none;
