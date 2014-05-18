@@ -54,7 +54,7 @@ header > h1 a:link, header > h1 a:visited {
   text-decoration: none;
 }
 
-header > h1 a:hover { color: #ff4700;}
+header > h1 a:hover { color: #ff4700; }
 
 .site {
   background-color: rgb(255, 255, 255);
@@ -66,7 +66,7 @@ strong {
 }
 
 footer {
-  border-top: 4px solid rgba(0, 0, 0, .6);
+  border-top: 2px solid rgba(0, 0, 0, .6);
   color: #666;
   font-size: 1.2em;
   width: 100%;
@@ -77,6 +77,18 @@ footer > div {
   text-align: center;
   width: 185px;
 }
+
+footer > div:first-child { font-size: 2em; }
+footer > div:first-child p { margin-bottom: 0; }
+footer > div:first-child a {
+  color: rgb(0, 0, 0);
+  -webkit-transition: all .25s;
+  -moz-transition: all .25s;
+  -o-transition: all .25s;
+  transition: all .25s;
+}
+
+footer > div:first-child a:hover { color: #ff4700; }
 
 .meta { font-size: 1.5em; font-family: 'Shadows Into Light Two', cursive; }
 
@@ -139,7 +151,7 @@ footer > div {
 
 /* Home */
 .home_wrapper {
-  padding: 53px 0 1em;
+  padding: 50px 0 1em;
   width: 100%;
 }
 
