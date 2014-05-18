@@ -1,0 +1,43 @@
+ul.posts {
+  font-size: 1em;
+  list-style-type: none;
+}
+
+/* Pagination */
+.pagination {
+  text-align: center;
+  font-size: 1.6em;
+  font-family: 'Oxygen', sans-serif;
+
+  .previous, .next {
+    background: $primary-orange;
+    border: 1px solid #FF0000;
+    border-radius: 0.25em;
+    color: rgb(255, 255, 255);
+    display: inline-block;
+    margin: 0.25em 0;
+    padding: .5em 0;
+    text-decoration: none;
+    width: 5em;
+
+    -webkit-transition: all .25s;
+    -moz-transition: all .25s;
+    -o-transition: all .25s;
+    transition: all .25s;
+  }
+
+  span.previous, span.next {
+    background-color: rgb(219, 219, 219);
+    border: none;
+    color: rgb(163, 163, 163);
+    box-shadow: none;
+  }
+
+  a.previous:hover, a.next:hover {
+    background-color: #FF6A30;
+  }
+
+  span.page_number {
+    margin: 0 .5em;
+  }
+}

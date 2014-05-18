@@ -2,6 +2,9 @@ name:           Sergio's Blog
 description:    Software dev experiences
 url:            http://sergioalvarezsuarez.com
 markdown:       redcarpet
-pygments:       true
+highlighter:    pygments
 paginate:       10
 paginate_path:  "archive/page:num"
+sass:
+  sass_dir: _sass
+  style: :compressed

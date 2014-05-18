@@ -1,0 +1,46 @@
+.home_wrapper {
+  padding: 53px 0 1em;
+  width: 100%;
+}
+
+.about {
+  background: url('/assets/diagmonds.png');
+  color: rgb(255, 255, 255);
+  font-family: 'Oxygen', sans-serif;
+  font-size: 2em;
+  margin-bottom: 2em;
+  padding: .5em 0;
+
+  div {
+    text-align: center;
+    &:last-child { padding: 0 .5em; }
+
+    p {
+      margin: .25em 0;
+      strong {
+        a, a:visited, a:link { color: $primary-orange; }
+      }
+    }
+  }
+
+  img { max-width: 150px; }
+}
+
+.last_post_container {
+  margin: 0 auto;
+  max-width: 700px;
+  width: 80%;
+
+  h1 {
+    font-family: 'Bevan', cursive;
+    font-size: 2.5em;
+    margin-bottom: 1em;
+  }
+
+  p:last-child {
+    font-family: 'Oxygen', sans-serif;
+    font-size: 1.6em;
+    a:link, a:visited { color: rgb(0, 0, 0); }
+    a:hover { color: $primary-orange; }
+  }
+}

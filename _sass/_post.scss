@@ -1,0 +1,65 @@
+#twitter-widget-0 { float: right; }
+
+.post {
+  font-family: 'Oxygen', sans-serif;
+  margin-bottom: 5em;
+
+  img { max-width: 100%; }
+  hr { margin: 1em 0; }
+
+  p, li {
+    font-size: 1.6em;
+    line-height: 1.5em;
+  }
+
+  /* standard */
+  pre {
+    overflow-x: scroll;
+    background-color: rgba(238, 238, 255, 0.1);
+    border: 1px solid #ddd;
+    font-size: 1.4em;
+    padding: 1em;
+
+    code { border: none; }
+
+    &.terminal {
+      background-color: #333;
+      border: 1px solid #000;
+      color: #FFF;
+
+      code { background-color: #333; }
+    }
+
+  }
+
+  ul, ol { margin-left: 1.35em; }
+
+  code {
+    background-color: rgba(238, 238, 255, 0);
+    border: 1px solid #ddd;
+    padding: 0 .2em;
+  }
+
+  .attention {
+    background-color: rgb(245, 205, 205);
+    border-left: 10px solid rgb(136, 0, 0);
+  }
+
+  .info {
+    background-color: rgb(221, 245, 205);
+    border-left: 10px solid rgb(60, 136, 0);
+  }
+
+  .warning {
+    background-color: rgb(252, 255, 182);
+    border-left: 10px solid rgb(255, 224, 0);
+  }
+
+  .attention, .info, .warning {
+    margin: 1.5em 10px;
+    padding: 0.5em 10px;
+    quotes: "\201C""\201D""\2018""\2019";
+
+    p { display: inline; }
+  }
+}

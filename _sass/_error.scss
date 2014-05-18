@@ -1,0 +1,13 @@
+/* 404 */
+p.error {
+  font-size: 3em;
+  font-family: 'Shadows Into Light Two', cursive;
+  text-align: center;
+  a, a:link, a:visited {
+    font-size: 1;
+    font-weight: bold;
+    color: rgb(0, 0, 0);
+  }
+
+  img { max-height: 1em; }
+}
