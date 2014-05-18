@@ -10,8 +10,6 @@ body {
   text-align: left;
 }
 
-h1, h2, h3, h4, h5, h6 { font-size: 100%; }
-
 p { margin: 1em 0; }
 
 a         { color: #00a; }
@@ -105,19 +103,19 @@ footer > div:first-child a:hover { color: #ff4700; }
   margin-bottom: 1em;
 }
 
-.content_wrapper > h2 {
+h2 {
   font-size: 3em;
   line-height: 1.5em;
   font-family: 'Oxygen', sans-serif;
 }
 
-.content_wrapper > h3 {
+h3 {
   font-size: 2.5em;
   color: #ff4700;
   margin: 1em 0;
 }
 
-.content_wrapper > h4 {
+h4 {
  font-size: 2em;
  color: rgb(0, 0, 0);
  margin: 1em 0;
