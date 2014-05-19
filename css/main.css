@@ -16,8 +16,12 @@ a         { color: #00a; }
 a:hover   { color: #000; }
 a:visited { color: #a0a; }
 
-/* Common */
-header {
+/*
+ *  ==================================
+ * | HEADER
+ *  ==================================
+ */
+ header {
   background-color: rgb(0, 0, 0);
   background-color: rgba(0, 0, 0, 1);
   border-top: .3em solid #ff4700;
@@ -29,17 +33,18 @@ header {
   z-index: 100;
 }
 
+header a {
+  -webkit-transition: all .25s;
+  -moz-transition: all .25s;
+  -o-transition: all .25s;
+  transition: all .25s;
+}
+
 header > h1 {
   float: left;
   font-size: 3em;
   font-weight: 400;
   margin: .25em 0 0 .5em;
-}
-@media (max-width: 310px){
-  header > h1 {
-    font-size: 1.8em;
-    margin: .75em 0 0 .5em;
-  }
 }
 
 header > h1 a {
@@ -53,6 +58,32 @@ header > h1 a:link, header > h1 a:visited {
 }
 
 header > h1 a:hover { color: #ff4700; }
+
+header > div.social {
+  float: right;
+  margin: .25em 0.5em 0 0;
+  font-size: 3em;
+}
+
+header > div.social > a, header > div.social > a:link, header > div.social > a:visited {
+  font-size: 1em;
+  color: rgb(255, 255, 255);
+}
+
+header > div.social > a:hover { color: #ff4700; }
+
+@media (max-width: 520px){
+  header > h1 {
+    font-size: 1.8em;
+    margin: .75em 0 0 .5em;
+  }
+  header > div.social {
+    margin: .75em 0.5em 0 0;
+    font-size: 2em;
+  }
+}
+
+/* =================================== */
 
 .site {
   background-color: rgb(255, 255, 255);
@@ -75,18 +106,6 @@ footer > div {
   text-align: center;
   width: 185px;
 }
-
-footer > div:first-child { font-size: 2em; }
-footer > div:first-child p { margin-bottom: 0; }
-footer > div:first-child a {
-  color: rgb(0, 0, 0);
-  -webkit-transition: all .25s;
-  -moz-transition: all .25s;
-  -o-transition: all .25s;
-  transition: all .25s;
-}
-
-footer > div:first-child a:hover { color: #ff4700; }
 
 .meta { font-size: 1.5em; font-family: 'Shadows Into Light Two', cursive; }
 
