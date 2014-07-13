@@ -11,7 +11,7 @@ var installSideMenuBar = function() {
 };
 
 var isSideBarMenuDisplayed = function() {
-  return $('.side-menu').css('left') === '-270px';
+  return $('.side-menu').css('left') !== '-270px';
 };
 
 var showSideBarMenu = function() {
@@ -47,9 +47,9 @@ $(document).ready(function(){
 
   $('.menu-slider').click(function(event) {
     if(isSideBarMenuDisplayed()) {
-      showSideBarMenu();
-    }else {
       collapseSideBarMenu();
+    }else {
+      showSideBarMenu();
     }
   });
 });

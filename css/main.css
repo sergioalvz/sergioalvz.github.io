@@ -20,7 +20,7 @@ a:visited  { color: #a0a; }
 }
 
 .menu-slider a {
-  color: rgb(255, 255, 255);
+  color: rgb(247, 247, 245);
   display: block;
   font-size: 30px;
   text-align: center;
@@ -37,7 +37,7 @@ a:visited  { color: #a0a; }
  *  ==================================
  */
 .side-menu {
-  background-color: rgb(247, 247, 245);
+  background-color: #FF7E4C;
   font-family: 'Patua One', cursive;
   height: 100%;
   left: 0;
@@ -47,13 +47,23 @@ a:visited  { color: #a0a; }
   width: 240px;
 }
 
+.side-menu a {
+  -webkit-transition: all .25s;
+  -moz-transition: all .25s;
+  -o-transition: all .25s;
+  transition: all .25s;
+}
+
+.side-menu a:hover {
+  color: #6D1E00;
+}
+
 h1   { font-size: 25px; font-weight: 400; }
-h1 a { color: rgb(146, 146, 139); }
-h1 a:link, h1 a:visited { color: rgb(146, 146, 139); text-decoration: none; }
-h1 a:hover { color: #ff4700; }
+h1 a { color: rgb(247, 247, 245); }
+h1 a:link, h1 a:visited { color: rgb(247, 247, 245); text-decoration: none; }
 
 .about {
-  color: rgb(146, 146, 139);
+  color: rgb(247, 247, 245);
   font-size: 15px;
   margin-bottom: 50px;
 }
@@ -70,11 +80,9 @@ nav ul li {
 }
 
 nav a, nav a:link, nav a:visited {
-  color: rgb(146, 146, 139);
+  color: rgb(247, 247, 245);
   text-decoration: none;
 }
-
-nav a:hover { color: #ff4700; }
 /* =================================== */
 
 
