@@ -1,26 +1,29 @@
 ---
 layout: default
-title: Sergio Álvarez Suárez | Home
+title: Home | sergioalvarezsuarez.com
 ---
-<div class="home_wrapper">
-  <section class="about">
-    <div><img src="/assets/avatar.png" alt="Author pic" /></div>
-    <div>
-      <p>Hi there! I'm <strong>Sergio Álvarez</strong> and I'm a software engineer who is currently working at <strong><a href="http://www.sweetspotintelligence.com/en" target="blank">Sweetspot Intelligence</a></strong> @ Asturias, Spain.</p>
-      <p>I will try to write about software engineering stuff which I discover by working everyday on coding!</p>
-      <p>Stay tuned! :)</p>
-    </div>
-  </section>
-  <div class="last_post_container">
-    <h1>Last post<i class="icon-lightbulb"></i></h1>
-    {% assign post = site.posts | first %}
-    <div class="post_excerpt">
-      <span>{{ post.date | date_to_string }}</span> &raquo; <a href="{{ post.url }}">{{ post.title }}</a>
-      {{ post.excerpt }}
-      {% for tag in post.tags %}
-        <span class="tag">#{{ tag }}</span>
-      {% endfor %}
-    </div>
-    <p><a href="/archive"><i class="icon-inbox"></i>See more blog posts...</a></p>
+<div class="content-wrapper">
+  <ul class="posts">
+    {% for post in paginator.posts %}
+      <li class="post_excerpt">
+        <span>{{ post.date | date_to_string }}</span> &raquo; <a href="{{ post.url }}">{{ post.title }}</a>
+        {{ post.excerpt }}
+      </li>
+    {% endfor %}
+  </ul>
+
+  <!-- Pagination links -->
+  <div class="pagination">
+    {% if paginator.previous_page %}
+      <a href="{{ paginator.previous_page_path | prepend: site.baseurl | replace: '//', '/' }}" class="previous">Previous</a>
+    {% else %}
+      <span class="previous">Previous</span>
+    {% endif %}
+    <span class="page_number">{{ paginator.page }} of {{ paginator.total_pages }}</span>
+    {% if paginator.next_page %}
+      <a href="{{ paginator.next_page_path | prepend: site.baseurl | replace: '//', '/' }}" class="next">Next</a>
+    {% else %}
+      <span class="next">Next</span>
+    {% endif %}
   </div>
 </div>
