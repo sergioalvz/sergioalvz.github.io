@@ -24,14 +24,7 @@ a:visited  { color: #a0a; }
   display: block;
   font-size: 30px;
   text-align: center;
-
-  -webkit-transition: all .25s;
-  -moz-transition: all .25s;
-  -o-transition: all .25s;
-  transition: all .25s;
 }
-
-.menu-slider a:hover { color: rgb(0, 0, 0); }
 
 .main-content {
   background-color: rgb(255, 255, 255);
@@ -102,21 +95,37 @@ strong { color: #ff4700; }
 
 .content-wrapper h1 { margin-bottom: 10px; }
 
-.content-wrapper h1 a { color: rgb(0, 0, 0); }
-
 .archive-post-wrapper {
-  border-bottom: 5px solid rgb(0, 0, 0);
-  padding: 20px 0;
+  background-color: rgb(247, 247, 245);
+  box-shadow: 1px 1px 5px #888888;
+  font-size: 16px;
+  line-height: 24px;
+  margin-bottom: 32px;
+  padding: 32px;
 }
+
+.archive-post-wrapper a, .archive-post-wrapper h1 a {
+  color: rgb(0, 0, 0);
+  -webkit-transition: all .25s;
+  -moz-transition: all .25s;
+  -o-transition: all .25s;
+  transition: all .25s;
+}
+.archive-post-wrapper a:hover { color: #ff4700; }
 
 .archive-post-wrapper .post { padding: 0; }
 
 .archive-post-wrapper .meta { display: inline; }
 
-.post-comments-wrapper { font-size: 11px; display: inline-block; vertical-align: middle; }
-.post-comments-wrapper a { color: rgb(0, 0, 0); }
-.post-comments-wrapper a:hover { color: #ff4700; }
+.post-comments-wrapper { font-size: 11px; display: inline-block; vertical-align: text-top; }
+.post-comments-wrapper i { font-size: 15px; }
 
+.read-more {
+  margin-top: 10px;
+  display: inline-block;
+  font-size: 16px;
+  font-weight: bolder;
+}
 
 h2 { font-size: 25px; }
 

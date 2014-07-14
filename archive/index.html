@@ -9,11 +9,12 @@ redirect_from: /index.html
       <h1><a href="{{ post.url }}">{{ post.title }}</a></h1>
       <span class="meta">{{ post.date | date_to_string }}</span>
       <div class="post-comments-wrapper">
-        <a href="{{ post.url }}#disqus_thread">{{ post.title }}</a><i class="icon-comment-alt"></i>
+        <a href="{{ post.url }}#disqus_thread">{{ post.title }}</a>
       </div>
       <div class="post">
-        {{ post.content }}
+        {{ post.excerpt }}
       </div>
+      <a href="{{ post.url}}" class="read-more">Read more...</a>
     </div>
   {% endfor %}
 
