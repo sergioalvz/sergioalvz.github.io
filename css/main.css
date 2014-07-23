@@ -44,8 +44,10 @@ a:visited  { color: #a0a; }
   padding: 15px;
   position: fixed;
   top: 0;
-  width: 240px;
+  width: 220px;
 }
+
+.side-menu h1 { font-size: 23px; }
 
 .side-menu a {
   -webkit-transition: all .25s;

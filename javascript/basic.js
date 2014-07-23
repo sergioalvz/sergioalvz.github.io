@@ -11,20 +11,20 @@ var installSideMenuBar = function() {
 };
 
 var isSideBarMenuDisplayed = function() {
-  return $('.side-menu').css('left') !== '-270px';
+  return $('.side-menu').css('left') !== '-250px';
 };
 
 var showSideBarMenu = function() {
   var $menu = $('.side-menu');
   var $menu_slider = $('.menu-slider');
 
-  $menu_slider.animate({ left: "270px" }, 0);
+  $menu_slider.animate({ left: "250px" }, 0);
   $menu.animate({ left: "0" }, 0);
 
   var current_viewport_width = $(window).width();
   if(current_viewport_width >= MINIMUM_SCREEN_WIDTH) {
     var $main_content = $('.main-content');
-    $main_content.css('padding-left', '320px');
+    $main_content.css('padding-left', '300px');
   }
 };
 
@@ -33,7 +33,7 @@ var collapseSideBarMenu = function() {
   var $menu_slider = $('.menu-slider');
 
   $menu_slider.animate({ left: "0" }, 0);
-  $menu.animate({ left: "-270px" }, 0);
+  $menu.animate({ left: "-250px" }, 0);
 
   var current_viewport_width = $(window).width();
   if(current_viewport_width >= MINIMUM_SCREEN_WIDTH) {
