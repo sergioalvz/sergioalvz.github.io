@@ -1,8 +1,6 @@
 ---
 layout: post
 title:  Processing and extracting terms from tweets
-date:   2014-03-01 17:40:00 +0100
-tags:   tfm puma
 ---
 
 Last month was specially productive and I'm developing a nice system for analyzing big datasets of tweets and start to obtain the first results.

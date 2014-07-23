@@ -1,8 +1,6 @@
 ---
 layout: post
 title: "Weekly digest: worth reading (III)"
-date: 2014-04-11
-tags: dev worth_reading
 ---
 
 Here are the reads which I enjoyed the most during the last weeks (yep.. sorry for the delay, but it was **holiday's time**!).

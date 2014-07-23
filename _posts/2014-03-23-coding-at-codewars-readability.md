@@ -1,8 +1,6 @@
 ---
 layout: post
 title: "Coding @ Codewars: Code readability and maintainability vs. LOC"
-date: 2014-03-23
-tags: dev kata
 ---
 
 One thing I like the most when I have some free time is spending time at [Codewars.com](http://www.codewars.com/) writing some [katas](http://en.wikipedia.org/wiki/Kata_\(programming\)) and practicing my programming skills. It is really impressive how you can learn and improve your expertise by doing katas and studying others solutions to the same problem.

@@ -1,8 +1,6 @@
 ---
 layout: post
 title: "Weekly digest: worth reading (II)"
-date: 2014-03-16
-tags: dev worth_reading
 ---
 
 The last week I found a really nice set of articles about **Scala** written by the IBM developers' team which gives a full overview about the Scala key-concepts.

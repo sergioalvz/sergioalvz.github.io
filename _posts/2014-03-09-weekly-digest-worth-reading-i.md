@@ -1,8 +1,6 @@
 ---
 layout: post
 title: "Weekly digest: worth reading (I)"
-date: 2014-03-09
-tags: dev worth_reading
 ---
 
 On this new section I will try to weekly summarize what have been my favorites readings during the last seven days. Hope you find them interesting too and, as usual, you have the comments for sharing also other articles that you have read and have given you a nice point about some topic or a better understanding about it.

@@ -1,8 +1,6 @@
 ---
 layout: post
 title: "My Sublime Text 2 setup"
-date: 2014-03-09
-tags: dev util
 ---
 
 Recently I've started to use Sublime Text 2 as my main working tool for coding. Formerly, my experience was specially focus on Eclipse (because the JVM was my very main platform) and also recently I've been playing with IntelliJ IDEA for doing my Master Thesis by using Scala (although my latest Scala shell scripts have been done by using Sublime Text too...)

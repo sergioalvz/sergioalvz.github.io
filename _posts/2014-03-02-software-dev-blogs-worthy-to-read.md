@@ -1,8 +1,6 @@
 ---
 layout: post
 title:  Software dev blogs worthy to read
-date:   2014-03-02
-tags:   dev
 ---
 
 One thing that I like the most is to read software dev blogs from some of the most brilliant minds in our industry. Currently, I have 24 feeds aggregated in my Development folder at Feedly.

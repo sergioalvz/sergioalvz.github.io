@@ -1,8 +1,6 @@
 ---
 layout: post
 title: "Weekly digest: worth reading (V)"
-date: 2014-05-05
-tags: dev worth_reading
 ---
 
 Breaking news! This week have been an amazing week in the dev atmosphere. [David Heinemeier Hansson](http://david.heinemeierhansson.com/archive.html) started an [incredible debate](http://david.heinemeierhansson.com/2014/tdd-is-dead-long-live-testing.html) with Uncle Bob and other **all-star** folks about the [benefits of the TDD practice](http://david.heinemeierhansson.com/2014/test-induced-design-damage.html).

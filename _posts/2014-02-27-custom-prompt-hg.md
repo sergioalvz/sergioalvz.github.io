@@ -1,8 +1,6 @@
 ---
 layout: post
 title:  Custom bash prompt w/ Mercurial info
-date:   2014-02-27 20:00:00 +0100
-tags:   util
 
 # For escaping braces
 branch: "{{branch}}"

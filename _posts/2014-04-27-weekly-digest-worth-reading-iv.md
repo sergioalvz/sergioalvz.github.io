@@ -1,8 +1,6 @@
 ---
 layout: post
 title: "Weekly digest: worth reading (IV)"
-date: 2014-04-27
-tags: dev worth_reading
 ---
 
 Another bag of articles (and some TED this time) which can be inspiring for you. There is some of them which are not really trendy, but I've discovered them right now and probably may be also useful for other folks.
