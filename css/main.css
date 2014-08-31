@@ -27,8 +27,11 @@ a:visited  { color: #a0a; }
 }
 
 .main-content {
-  background-color: rgb(255, 255, 255);
   padding-left: 50px;
+}
+
+.home {
+  background-color: rgb(60, 57, 54)
 }
 
 /*
@@ -36,7 +39,7 @@ a:visited  { color: #a0a; }
  * | SIDE MENU BAR
  *  ==================================
  */
-.side-menu {
+ .side-menu {
   background-color: #FF7E4C;
   font-family: 'Patua One', cursive;
   height: 100%;
@@ -56,7 +59,9 @@ a:visited  { color: #a0a; }
   transition: all .25s;
 }
 
-.side-menu a:hover { color: rgb(0, 0, 0); }
+.side-menu a:hover { color: rgb(60, 57, 54); }
+
+.side-menu h1 { text-align: right; }
 
 h1   { font-size: 25px; font-weight: 400; }
 h1 a { color: rgb(247, 247, 245); }
@@ -65,7 +70,8 @@ h1 a:link, h1 a:visited { color: rgb(247, 247, 245); text-decoration: none; }
 .about {
   color: rgb(247, 247, 245);
   font-size: 15px;
-  margin-bottom: 50px;
+  margin-bottom: 30px;
+  text-align: right;
 }
 
 nav {
@@ -96,6 +102,56 @@ strong { color: #ff4700; }
 }
 
 .content-wrapper h1 { margin-bottom: 10px; }
+
+.home .content-wrapper h3 {
+  text-align: center;
+  color: rgb(255, 255, 255);
+  text-transform: uppercase;
+  font-weight: bolder;
+  font-size: 65px;
+  letter-spacing: -9px;
+  line-height: 60px;
+  margin-bottom: 50px;
+}
+
+.home .content-wrapper p {
+  text-align: center;
+  color: rgb(255, 255, 255);
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+
+.home .content-wrapper .mail {
+  margin-top: 30px;
+  background-color: rgb(116, 116, 116);
+  padding: 10px 0;
+}
+
+.home .content-wrapper .social {
+  list-style-type: none;
+  width: 180px;
+  margin: 0 auto;
+}
+
+.home .content-wrapper .social li{
+  display: inline-block;
+  margin-right: 30px;
+}
+
+.home .content-wrapper .social li:last-of-type {
+  margin-right: 0;
+}
+
+.home .content-wrapper .social li a {
+  color: rgb(255, 255, 255);
+  font-size: 40px;
+}
+
+.home .content-wrapper p:last-of-type {
+  margin-top: 30px;
+  font-size: 15px;
+  font-weight: bolder;
+}
 
 .archive-post-wrapper {
   background-color: rgb(247, 247, 245);
@@ -148,7 +204,7 @@ h4 {
  * | BLOCKS
  *  ==================================
  */
-.attention {
+ .attention {
   background-color: rgb(245, 205, 205);
   border-left: 10px solid rgb(136, 0, 0);
 }
@@ -203,7 +259,7 @@ h4 {
  *  ==================================
  */
 
-.post-meta-data {
+ .post-meta-data {
   display: table;
   margin-top: 10px;
 }
@@ -237,7 +293,7 @@ h4 {
  * | CODE
  *  ==================================
  */
-.post pre {
+ .post pre {
   overflow-x: scroll;
   background-color: rgba(238, 238, 255, 0.1);
   border: 1px solid #ddd;
@@ -269,7 +325,7 @@ h4 {
  * | PAGINATION
  *  ==================================
  */
-.pagination {
+ .pagination {
   font-family: 'Open Sans', sans-serif;
   font-size: 16px;
   margin-top: 20px;
@@ -314,7 +370,7 @@ h4 {
  * | PAGINATION
  *  ==================================
  */
-p.error {
+ p.error {
   font-size: 30px;
   font-family: 'Shadows Into Light Two', cursive;
   text-align: center;
