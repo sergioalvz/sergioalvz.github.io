@@ -10,7 +10,7 @@ a:visited  { color: #a0a; }
 
 .menu-slider {
   background-color: #ff4700;
-  box-shadow: rgba(0, 0, 0, 0.498039) 3px 0px 6px;
+  box-shadow: rgba(0, 0, 0, 0.498039) 2px 0 1px;
   height: 100%;
   left: 0;
   padding-top: 15px;
@@ -91,7 +91,7 @@ nav a, nav a:link, nav a:visited {
   text-decoration: none;
   font-size: 18px;
   text-transform: uppercase;
-letter-spacing: -1.25px;
+  letter-spacing: -1.25px;
   font-weight: bolder;
 }
 /* =================================== */
@@ -172,7 +172,7 @@ strong { color: #ff4700; }
   font-family: 'Patua One', cursive;
   text-transform: uppercase;
   color: rgb(255, 255, 255);
-  letter-spacing: -2px;
+  letter-spacing: -1px;
   text-shadow: 2px 1px 0 #FF7E4C;
   font-size: 25px;
 }
@@ -186,6 +186,10 @@ strong { color: #ff4700; }
   color: rgb(255, 255, 255);
   margin-bottom: 10px;
   font-size: 15px;
+}
+
+.home .resume > div > div > ul li i {
+  font-size: 20px;
 }
 
 .home .resume > div > div > div {
