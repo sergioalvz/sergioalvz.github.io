@@ -50,7 +50,7 @@ a:visited  { color: #a0a; }
   width: 220px;
 }
 
-.side-menu h1 { font-size: 23px; }
+.side-menu h1 { font-size: 30px; }
 
 .side-menu a {
   -webkit-transition: all .25s;
@@ -88,6 +88,10 @@ nav ul li {
 nav a, nav a:link, nav a:visited {
   color: rgb(247, 247, 245);
   text-decoration: none;
+  font-size: 18px;
+  text-transform: uppercase;
+letter-spacing: -1.25px;
+  font-weight: bolder;
 }
 /* =================================== */
 
@@ -104,14 +108,15 @@ strong { color: #ff4700; }
 .content-wrapper h1 { margin-bottom: 10px; }
 
 .home .content-wrapper h3 {
-  text-align: center;
   color: rgb(255, 255, 255);
-  text-transform: uppercase;
-  font-weight: bolder;
   font-size: 65px;
+  font-weight: bolder;
   letter-spacing: -9px;
   line-height: 60px;
   margin-bottom: 50px;
+  text-align: center;
+  text-shadow: 5px 3px 0 #FF7E4C;
+  text-transform: uppercase;
 }
 
 .home .content-wrapper p {
@@ -119,6 +124,11 @@ strong { color: #ff4700; }
   color: rgb(255, 255, 255);
   font-size: 20px;
   margin-bottom: 10px;
+}
+
+.home .content-wrapper p a {
+  color: #FF7E4C;
+  text-decoration: none;
 }
 
 .home .content-wrapper .mail {
@@ -151,6 +161,49 @@ strong { color: #ff4700; }
   margin-top: 30px;
   font-size: 15px;
   font-weight: bolder;
+}
+
+.home .resume {
+  margin: 30px 0 50px;
+}
+
+.home .resume > div > div > h4 {
+  font-family: 'Patua One', cursive;
+  text-transform: uppercase;
+  color: rgb(255, 255, 255);
+  letter-spacing: -2px;
+  text-shadow: 2px 1px 0 #FF7E4C;
+  font-size: 25px;
+}
+
+.home .resume > div > div > ul {
+  list-style-type: none;
+  list-style-position: inside;
+}
+
+.home .resume > div > div > ul li {
+  color: rgb(255, 255, 255);
+  margin-bottom: 10px;
+  font-size: 15px;
+}
+
+.home .resume > div > div > div {
+  margin-top: 30px;
+}
+
+.home .resume > div > div > div:first-of-type {
+  margin-top: 0;
+}
+
+.home .resume > div > div header h5 {
+  color: rgb(255, 255, 255);
+  font-size: 18px;
+}
+
+.home .resume > div > div header span {
+  color: rgb(216, 212, 212);
+  font-size: 14px;
+  font-style: italic;
 }
 
 .archive-post-wrapper {
