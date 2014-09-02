@@ -90,7 +90,7 @@ nav a, nav a:link, nav a:visited {
   color: rgb(247, 247, 245);
   text-decoration: none;
   font-size: 18px;
-  text-transform: uppercase;
+  font-family: 'Patua One', cursive;
   letter-spacing: -1.25px;
   font-weight: bolder;
 }
