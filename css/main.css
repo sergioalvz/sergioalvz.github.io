@@ -97,23 +97,32 @@ nav a, nav a:link, nav a:visited {
 /* =================================== */
 
 
-strong { color: #ff4700; }
+strong { color: #FF7E4C; }
 
 .content-wrapper {
   font-family: 'Open Sans', sans-serif;
   margin: 0 auto;
-  padding: 15px 20px 50px;
+  padding: 40px 20px 50px;
   max-width: 700px;
 }
 
 .content-wrapper h1 { margin-bottom: 10px; }
+
+.content-wrapper p a{
+  color: #FF7E4C;
+  text-decoration: none;
+}
+
+.content-wrapper p a:hover {
+  text-decoration: underline;
+}
 
 .home .content-wrapper h3 {
   color: rgb(255, 255, 255);
   font-size: 65px;
   font-weight: bolder;
   letter-spacing: -9px;
-  line-height: 60px;
+  line-height: 59px;
   margin-bottom: 50px;
   text-align: center;
   text-shadow: 5px 3px 0 #FF7E4C;
@@ -127,9 +136,9 @@ strong { color: #ff4700; }
   margin-bottom: 10px;
 }
 
-.home .content-wrapper p a {
-  color: #FF7E4C;
-  text-decoration: none;
+.home .summary p {
+  text-align: left;
+  font-size: 15px;
 }
 
 .home .content-wrapper .mail {
@@ -140,8 +149,8 @@ strong { color: #ff4700; }
 
 .home .content-wrapper .social {
   list-style-type: none;
-  width: 180px;
-  margin: 0 auto;
+  width: 255px;
+  margin: 0 auto 30px;
 }
 
 .home .content-wrapper .social li{
@@ -155,7 +164,7 @@ strong { color: #ff4700; }
 
 .home .content-wrapper .social li a {
   color: rgb(255, 255, 255);
-  font-size: 40px;
+  font-size: 65px;
 }
 
 .home .content-wrapper > section > p:last-of-type {
@@ -354,6 +363,7 @@ h4 {
   padding-right: 20px;
   vertical-align: middle;
 }
+
 #twitter-widget-0 { display: table-cell; }
 
 .post {
