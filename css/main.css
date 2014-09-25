@@ -168,6 +168,10 @@ strong { color: #ff4700; }
   margin: 30px 0 50px;
 }
 
+.home .resume > div {
+  margin-bottom: 30px;
+}
+
 .home .resume > div > div > h4 {
   font-family: 'Patua One', cursive;
   text-transform: uppercase;
