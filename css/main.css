@@ -138,7 +138,7 @@ strong { color: #FF7E4C; }
 
 .home .summary p {
   text-align: left;
-  font-size: 15px;
+  font-size: 18px;
 }
 
 .home .content-wrapper .mail {
@@ -179,6 +179,11 @@ strong { color: #FF7E4C; }
 
 .home .resume > div {
   margin-bottom: 30px;
+}
+
+.home .resume > div > div section {
+  border-left: 5px solid white;
+  padding-left: 10px;
 }
 
 .home .resume > div > div > h4 {
