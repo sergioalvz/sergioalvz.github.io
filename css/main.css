@@ -142,7 +142,7 @@ strong { color: #FF7E4C; }
 }
 
 .home .content-wrapper .social {
-  padding-top: 20px;
+  padding: 20px 0;
   border-top: 1px solid rgb(255, 255, 255);
 }
 
@@ -157,11 +157,6 @@ strong { color: #FF7E4C; }
 
 .home .content-wrapper .social li {
   margin-bottom: 5px;
-}
-
-.home .content-wrapper .social li:last-of-type {
-  margin-bottom: 0;
-  margin-top: 20px;
 }
 
 .home .content-wrapper .social li a {
@@ -182,10 +177,9 @@ strong { color: #FF7E4C; }
   font-size: 15px;
 }
 
-.home .content-wrapper > section > p:last-of-type {
-  margin-top: 30px;
+.home .content-wrapper > section > p:nth-last-of-type(-n+2) {
   font-size: 15px;
-  font-weight: bolder;
+  line-height: 10px;
 }
 
 .home .resume {
