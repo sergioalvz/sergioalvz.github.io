@@ -141,30 +141,45 @@ strong { color: #FF7E4C; }
   font-size: 18px;
 }
 
-.home .content-wrapper .mail {
-  margin-top: 30px;
-  background-color: rgb(116, 116, 116);
-  padding: 10px 0;
-}
-
 .home .content-wrapper .social {
-  list-style-type: none;
-  width: 255px;
-  margin: 0 auto 30px;
+  padding-top: 20px;
+  border-top: 1px solid rgb(255, 255, 255);
 }
 
-.home .content-wrapper .social li{
-  display: inline-block;
-  margin-right: 30px;
+.home .content-wrapper .social p {
+  text-align: left;
+  font-size: 15px;
+}
+
+.home .content-wrapper .social ul {
+  list-style-type: none;
+}
+
+.home .content-wrapper .social li {
+  margin-bottom: 5px;
 }
 
 .home .content-wrapper .social li:last-of-type {
-  margin-right: 0;
+  margin-bottom: 0;
+  margin-top: 20px;
 }
 
 .home .content-wrapper .social li a {
   color: rgb(255, 255, 255);
-  font-size: 65px;
+  text-decoration: none;
+  font-size: 15px;
+}
+
+.home .content-wrapper .social li a:hover {
+  text-decoration: underline;
+}
+
+.home .content-wrapper .social li a i {
+  margin-right: 10px;
+}
+
+.home .content-wrapper .social li p {
+  font-size: 15px;
 }
 
 .home .content-wrapper > section > p:last-of-type {
