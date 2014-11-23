@@ -6,6 +6,30 @@ a:hover    { color: #000; }
 a:visited  { color: #a0a; }
 /* ============ */
 
+i {
+  margin: 0 10px 0 0;
+}
+
+.circle {
+  display: block;
+  -moz-border-radius: 50%;
+  -webkit-border-radius: 50%;
+  border-radius: 50%;
+  background-color: #FF7E4C;
+  text-align: center;
+  margin: 0 auto;
+}
+
+.circle.tiny {
+  width: 50px;
+  height: 50px;
+}
+
+.circle.large {
+  width: 200px;
+  height: 200px;
+}
+
 .main-page-wrapper  { overflow: hidden; }
 
 .menu-slider {
@@ -143,34 +167,29 @@ strong { color: #FF7E4C; }
 
 .home .content-wrapper .social {
   padding: 20px 0;
-  border-top: 1px solid rgb(255, 255, 255);
-}
-
-.home .content-wrapper .social p {
-  text-align: left;
-  font-size: 15px;
 }
 
 .home .content-wrapper .social ul {
   list-style-type: none;
+  text-align: center;
 }
 
 .home .content-wrapper .social li {
-  margin-bottom: 5px;
+  display: inline-block;
 }
 
 .home .content-wrapper .social li a {
   color: rgb(255, 255, 255);
   text-decoration: none;
-  font-size: 15px;
+  font-size: 35px;
+}
+
+.home .content-wrapper .social li a i {
+  margin: 0;
 }
 
 .home .content-wrapper .social li a:hover {
   text-decoration: underline;
-}
-
-.home .content-wrapper .social li a i {
-  margin-right: 10px;
 }
 
 .home .content-wrapper .social li p {
@@ -184,6 +203,10 @@ strong { color: #FF7E4C; }
 
 .home .resume {
   margin: 30px 0 50px;
+}
+
+.home .resume a {
+  color: rgb(255, 255, 255);
 }
 
 .home .resume > div {
@@ -236,6 +259,10 @@ strong { color: #FF7E4C; }
   color: rgb(216, 212, 212);
   font-size: 14px;
   font-style: italic;
+}
+
+.home .resume ul li > i {
+  margin: 0;
 }
 
 .home .resume > div > div > div > section > p {
