@@ -1,6 +1,6 @@
 ---
 layout: post
-title: My roadmap @ Codemotion 2014
+title: "My roadmap @ Codemotion 2014"
 ---
 
 The last weekend I was at **[Codemotion](http://2014.codemotion.es/en/)** (Madrid). This was the first time that I was attending to a dev conference but it was a really pleasant experience. Few days before going there, I was checking the agenda and selecting those conferences that fit my interests. One of my goals here wasn't just go deeper in technologies that I already know but to have a first introduction to others that I **should** know (Ember.js, Graph Databases and interesting Cloud and Big Data technologies - *sorry for the buzz words here*).
