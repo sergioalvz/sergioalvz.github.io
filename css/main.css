@@ -51,6 +51,10 @@ i {
   text-align: center;
 }
 
+.menu-slider a i {
+  margin: 0;
+}
+
 .main-content {
   padding-left: 50px;
 }
