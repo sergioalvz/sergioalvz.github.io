@@ -4,7 +4,21 @@
 @import "reset";
 @import "settings";
 @import "fonts";
+@import "mixins";
 @import "sidebar";
+@import "frontpage";
+
+.sticky-title {
+  color: rgb(255, 255, 255);
+  font-size: 65px;
+  font-weight: bolder;
+  letter-spacing: -9px;
+  line-height: 59px;
+  margin-bottom: 50px;
+  text-align: center;
+  text-shadow: 5px 3px 0 $complementary-color;
+  text-transform: uppercase;
+}
 
 i {
   margin: 0 10px 0 0;
@@ -30,22 +44,23 @@ i {
   height: 200px;
 }
 
-.main-page-wrapper  { overflow: hidden; }
+.main-page-wrapper {
+  overflow: hidden;
+}
 
 .menu-slider {
   background-color: $secondary-color;
-  box-shadow: rgba(0, 0, 0, 0.498039) 2px 0 1px;
+  cursor: pointer;
   height: 100%;
   left: 0;
   padding-top: 15px;
   position: fixed;
   top: 0;
   width: 50px;
-  cursor: pointer;
 }
 
 .menu-slider a {
-  color: rgb(247, 247, 245);
+  color: $white;
   display: block;
   font-size: 30px;
   text-align: center;
@@ -57,10 +72,6 @@ i {
 
 .main-content {
   padding-left: 50px;
-}
-
-.home {
-  background-color: $primary-color
 }
 
 strong { color: $complementary-color; }
@@ -81,151 +92,6 @@ strong { color: $complementary-color; }
 
 .content-wrapper p a:hover {
   text-decoration: underline;
-}
-
-.home .content-wrapper h3 {
-  color: rgb(255, 255, 255);
-  font-size: 65px;
-  font-weight: bolder;
-  letter-spacing: -9px;
-  line-height: 59px;
-  margin-bottom: 50px;
-  text-align: center;
-  text-shadow: 5px 3px 0 $complementary-color;
-  text-transform: uppercase;
-}
-
-.home .content-wrapper p {
-  text-align: center;
-  color: rgb(255, 255, 255);
-  font-size: 20px;
-  margin-bottom: 10px;
-}
-
-.home .summary p {
-  text-align: left;
-  font-size: 18px;
-}
-
-.home .content-wrapper .social {
-  padding: 20px 0;
-}
-
-.home .content-wrapper .social ul {
-  list-style-type: none;
-  text-align: center;
-}
-
-.home .content-wrapper .social li {
-  display: inline-block;
-}
-
-.home .content-wrapper .social li a {
-  color: rgb(255, 255, 255);
-  text-decoration: none;
-  font-size: 35px;
-}
-
-.home .content-wrapper .social li a i {
-  margin: 0;
-}
-
-.home .content-wrapper .social li a:hover {
-  text-decoration: underline;
-}
-
-.home .content-wrapper .social li p {
-  font-size: 15px;
-}
-
-.home .content-wrapper > section > p:nth-last-of-type(-n+2) {
-  font-size: 15px;
-  line-height: 10px;
-}
-
-.home .resume {
-  margin: 30px 0 50px;
-}
-
-.home .resume a {
-  color: rgb(255, 255, 255);
-}
-
-.home .resume > div {
-  margin-bottom: 30px;
-}
-
-.home .resume > div > div section {
-  border-left: 5px solid white;
-  padding-left: 10px;
-}
-
-.home .resume > div > div > h4 {
-  font-family: 'Patua One', cursive;
-  text-transform: uppercase;
-  color: rgb(255, 255, 255);
-  letter-spacing: -1px;
-  text-shadow: 2px 1px 0 $complementary-color;
-  font-size: 25px;
-}
-
-.home .resume > div > div > ul {
-  list-style-type: none;
-  list-style-position: inside;
-}
-
-.home .resume > div > div > ul li {
-  color: rgb(255, 255, 255);
-  margin-bottom: 10px;
-  font-size: 15px;
-}
-
-.home .resume > div > div > ul li i {
-  font-size: 20px;
-}
-
-.home .resume > div > div > div {
-  margin-top: 30px;
-}
-
-.home .resume > div > div > div:first-of-type {
-  margin-top: 0;
-}
-
-.home .resume > div > div header h5 {
-  color: rgb(255, 255, 255);
-  font-size: 18px;
-}
-
-.home .resume > div > div header span {
-  color: rgb(216, 212, 212);
-  font-size: 14px;
-  font-style: italic;
-}
-
-.home .resume ul li > i {
-  margin: 0;
-}
-
-.home .resume > div > div > div > section > p {
-  font-weight: normal;
-  text-align: left;
-  font-size: 15px;
-  margin-top: 15px;
-}
-
-.home .resume > div > div > div > section > ul {
-  list-style-position: inside;
-}
-
-.home .resume > div > div > div > section > ul li {
-  font-size: 15px;
-  color: rgb(255, 255, 255);
-}
-
-.home .resume > div > div > div > section > ul li a {
-  font-size: 15px;
-  color: rgb(255, 255, 255);
 }
 
 .archive-post-wrapper {

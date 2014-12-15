@@ -2,10 +2,12 @@
 <html>
 <head>
   <meta charset="utf-8">
+
   <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
+
   <meta name="description" content="Personal site of Sergio Álvarez Suárez">
-  <meta name="keywords" content="developer, personal, web, oviedo, computing, programmer, web, software, engineering, sergio, alvarez, suarez, ruby, javascript, node, scala, sweetspot">
+  <meta name="keywords" content="developer, personal, web, oviedo, computing, programmer, web, software, engineering, sergio, sergio alvarez, sergio alvarez suarez, ruby, javascript, node, scala, sweetspot, rails, backbone, quality, service, freelance, asturias, quality software, web development, software engineering, agile, scrum, codecoolture">
   <meta name="author" content="Sergio Álvarez Suárez">
 
   <title>{{ page.title }} | Sergio Álvarez Suárez | Software and Web Engineer</title>
@@ -20,7 +22,7 @@
   (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o), m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m) })(window,document,'script','//www.google-analytics.com/analytics.js','ga'); ga('create', 'UA-40587447-1', 'sergioalvarezsuarez.com'); ga('send', 'pageview');
   </script>
 </head>
-<body class="{{ page.code_name }}">
+<body class="{{ page.type }}">
   {% include sidebar.html %}
   <div class="main-page-wrapper">
     <div class="menu-slider">
@@ -28,7 +30,7 @@
         <a href="#"><i class="fa fa-bars"></i></a>
       </div>
     </div>
-    <div class="main-content {{ page.code_name }}">
+    <div class="main-content {{ page.type }}">
       {{ content }}
     </div>
   </div>

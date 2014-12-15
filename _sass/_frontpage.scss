@@ -1,0 +1,105 @@
+.front-page {
+  background-color: $primary-color;
+
+  p {
+    color: $white;
+    font-size: 18px;
+  }
+
+  .resume {
+
+    a {
+      color: $white;
+    }
+
+    > div {
+      margin-bottom: 30px;
+
+      > div {
+        section {
+          border-left: 5px solid white;
+          margin-top: 10px;
+          padding-left: 10px;
+
+          p {
+            font-size: 15px;
+          }
+        }
+
+        h4 {
+          color: $white;
+          font-family: $serif-font-family;
+          font-size: 25px;
+          letter-spacing: -1px;
+          text-shadow: 2px 1px 0 $complementary-color;
+          text-transform: uppercase;
+        }
+
+        ul {
+          list-style-type: none;
+          list-style-position: inside;
+
+          li {
+            color: $white;
+            margin-bottom: 10px;
+            font-size: 15px;
+
+            i {
+              font-size: 20px;
+              margin: 0;
+            }
+          }
+
+          ul {
+            list-style-type: circle;
+          }
+        }
+
+        > div {
+          margin-top: 30px;
+
+          &:first-of-type {
+            margin-top: 0;
+          }
+        }
+
+        header {
+          h5 {
+            color: $white;
+            font-size: 18px;
+          }
+
+          span {
+            color: $grey;
+            font-size: 14px;
+            font-style: italic;
+          }
+        }
+      }
+    }
+  }
+
+  blockquote {
+    color: $grey;
+    font-style: italic;
+    margin: 1.5em 10px;
+    padding: 0.5em 10px;
+    quotes: "\201C""\201D""\2018""\2019";
+
+    &:before {
+      content: open-quote;
+      font-size: 40px;
+      line-height: 10px;
+      margin-right: 2.5px;
+      vertical-align: -10px;
+    }
+
+    p {
+      display: inline;
+    }
+
+    footer {
+      margin-top: 10px;
+    }
+  }
+}
