@@ -3,6 +3,8 @@
 
 @import "reset";
 @import "settings";
+@import "fonts";
+@import "sidebar";
 
 i {
   margin: 0 10px 0 0;
@@ -60,68 +62,6 @@ i {
 .home {
   background-color: $primary-color
 }
-
-/*
- *  ==================================
- * | SIDE MENU BAR
- *  ==================================
- */
- .side-menu {
-  background-color: $complementary-color;
-  font-family: 'Patua One', cursive;
-  height: 100%;
-  left: 0;
-  padding: 15px;
-  position: fixed;
-  top: 0;
-  width: 220px;
-}
-
-.side-menu h1 { font-size: 30px; }
-
-.side-menu a {
-  -webkit-transition: all .25s;
-  -moz-transition: all .25s;
-  -o-transition: all .25s;
-  transition: all .25s;
-}
-
-.side-menu a:hover { color: $primary-color; }
-
-.side-menu h1 { text-align: right; }
-
-h1   { font-size: 25px; font-weight: 400; }
-h1 a { color: rgb(247, 247, 245); }
-h1 a:link, h1 a:visited { color: rgb(247, 247, 245); text-decoration: none; }
-
-.about {
-  color: rgb(247, 247, 245);
-  font-size: 15px;
-  margin-bottom: 30px;
-  text-align: right;
-}
-
-nav {
-  font-family: 'Open Sans', sans-serif;
-  font-size: 15px;
-}
-
-nav ul li {
-  list-style-type: none;
-  margin-bottom: 15px;
-  text-align: right;
-}
-
-nav a, nav a:link, nav a:visited {
-  color: rgb(247, 247, 245);
-  text-decoration: none;
-  font-size: 18px;
-  font-family: 'Patua One', cursive;
-  letter-spacing: -1.25px;
-  font-weight: bolder;
-}
-/* =================================== */
-
 
 strong { color: $complementary-color; }
 

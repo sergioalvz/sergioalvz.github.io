@@ -11,11 +11,11 @@ var installSideMenuBar = function() {
 };
 
 var isSideBarMenuDisplayed = function() {
-  return $('.side-menu').css('left') !== '-250px';
+  return $('.sidebar').css('left') !== '-250px';
 };
 
 var showSideBarMenu = function() {
-  var $menu = $('.side-menu');
+  var $menu = $('.sidebar');
   var $menu_slider = $('.menu-slider');
 
   $menu_slider.animate({ left: "250px" }, 0);
@@ -29,7 +29,7 @@ var showSideBarMenu = function() {
 };
 
 var collapseSideBarMenu = function() {
-  var $menu = $('.side-menu');
+  var $menu = $('.sidebar');
   var $menu_slider = $('.menu-slider');
 
   $menu_slider.animate({ left: "0" }, 0);
