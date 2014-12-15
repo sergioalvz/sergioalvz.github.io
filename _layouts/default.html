@@ -11,7 +11,7 @@
   <title>{{ page.title }} | Sergio Álvarez Suárez | Software and Web Engineer</title>
 
   <link rel="shortcut icon" href="/favicon.png?v=2" />
-  <!-- syntax highlighting CSS -->
+  <!-- Syntax highlighting CSS -->
   <link rel="stylesheet" href="/css/syntax.css">
   <!-- Custom CSS -->
   <link rel="stylesheet" media="screen" href="/css/main.css">
@@ -30,22 +30,7 @@
   </script>
 </head>
 <body class="{{ page.code_name }}">
-  <section class="side-menu">
-    <header>
-      <h1><a href="/">Sergio Álvarez</a></h1>
-    </header>
-    <section class="about">
-      <div>
-        <p>Software &amp;&amp; Web Engineer</p>
-      </div>
-    </section>
-    <nav>
-      <ul>
-        <li><a href="/">Home <i class="fa fa-home"></i></a></li>
-        <li><a href="/blog">Blog <i class="fa fa-book"></i></a></li>
-      </ul>
-    </nav>
-  </section>
+  {% include sidebar.html %}
   <div class="main-page-wrapper">
     <div class="menu-slider">
       <div>
