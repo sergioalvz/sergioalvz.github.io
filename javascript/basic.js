@@ -1,4 +1,5 @@
 var MINIMUM_SCREEN_WIDTH = 745;
+var MOVABLE_CONTENT = ".main-content, .page-footer";
 
 
 var installSideMenuBar = function() {
@@ -23,7 +24,7 @@ var showSideBarMenu = function() {
 
   var current_viewport_width = $(window).width();
   if(current_viewport_width >= MINIMUM_SCREEN_WIDTH) {
-    var $main_content = $('.main-content');
+    var $main_content = $(MOVABLE_CONTENT);
     $main_content.css('padding-left', '300px');
   }
 };
@@ -37,7 +38,7 @@ var collapseSideBarMenu = function() {
 
   var current_viewport_width = $(window).width();
   if(current_viewport_width >= MINIMUM_SCREEN_WIDTH) {
-    var $main_content = $('.main-content');
+    var $main_content = $(MOVABLE_CONTENT);
     $main_content.css('padding-left', '50px');
   }
 };

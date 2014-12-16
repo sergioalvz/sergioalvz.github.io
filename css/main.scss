@@ -7,21 +7,14 @@
 @import "mixins";
 @import "sidebar";
 @import "frontpage";
-
-.sticky-title {
-  color: rgb(255, 255, 255);
-  font-size: 65px;
-  font-weight: bolder;
-  letter-spacing: -9px;
-  line-height: 59px;
-  margin-bottom: 50px;
-  text-align: center;
-  text-shadow: 5px 3px 0 $complementary-color;
-  text-transform: uppercase;
-}
+@import "footer";
 
 i {
-  margin: 0 10px 0 0;
+  display: inline-block;
+  position: static;
+  min-width: 20px;
+  margin: 0 5px;
+  text-align: center;
 }
 
 .circle {
@@ -42,10 +35,6 @@ i {
 .circle.large {
   width: 200px;
   height: 200px;
-}
-
-.main-page-wrapper {
-  overflow: hidden;
 }
 
 .menu-slider {
@@ -77,7 +66,7 @@ i {
 strong { color: $complementary-color; }
 
 .content-wrapper {
-  font-family: 'Open Sans', sans-serif;
+  font-family: $sans-serif-font-family;
   margin: 0 auto;
   padding: 40px 20px 50px;
   max-width: 700px;
@@ -177,7 +166,7 @@ h4 {
 .post_excerpt {
   background-color: rgb(247, 247, 245);
   box-shadow: 1px 1px 5px #888888;
-  font-family: 'Open Sans', sans-serif;
+  font-family: $sans-serif-font-family;
   font-size: 16px;
 
   margin-bottom: 20px;
@@ -216,7 +205,7 @@ h4 {
 #twitter-widget-0 { display: table-cell; }
 
 .post {
-  font-family: 'Open Sans', sans-serif;
+  font-family: $sans-serif-font-family;
   padding: 20px 0 50px;
 }
 
@@ -268,7 +257,7 @@ h4 {
  *  ==================================
  */
  .pagination {
-  font-family: 'Open Sans', sans-serif;
+  font-family: $sans-serif-font-family;
   font-size: 16px;
   margin-top: 20px;
   text-align: center;

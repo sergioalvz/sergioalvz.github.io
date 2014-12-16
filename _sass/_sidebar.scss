@@ -35,6 +35,7 @@
         list-style-type: none;
         padding-right: 15px;
         line-height: 25px;
+        letter-spacing: -1px;
 
         a, a:link, a:visited {
           color: $white;
@@ -45,6 +46,10 @@
 
           &:hover {
             color: $primary-color;
+          }
+
+          &, i {
+            font-weight: 700;
           }
         }
       }

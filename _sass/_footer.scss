@@ -1,0 +1,46 @@
+@include sticky-footer(200px);
+
+.page-footer {
+  background-color: lighten($primary-color, 10%);
+  padding-left: 50px;
+
+  footer {
+    color: $white;
+    padding: 20px;
+
+    p {
+      font-size: 14px;
+    }
+
+    > p {
+      font-weight: 700;
+
+      .support-text {
+        font-style: italic;
+        color: $grey;
+      }
+    }
+
+    .social {
+      h1 {
+        @include sticky-title(20px, -1px, close);
+        font-weight: 700;
+        margin: 10px 0;
+      }
+
+      p {
+        margin-bottom: 5px;
+
+        a {
+          color: $white;
+          text-decoration: none;
+        }
+
+        i {
+          margin-left: 0;
+          text-align: left;
+        }
+      }
+    }
+  }
+}
