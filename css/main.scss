@@ -1,8 +1,8 @@
 ---
 ---
+@import "settings";
 
 @import "reset";
-@import "settings";
 @import "fonts";
 @import "mixins";
 @import "sidebar";
@@ -175,7 +175,7 @@ h4 {
 
 .post_excerpt span:first-child {
   color: #5E5E5E;
-  font-family: 'Shadows Into Light Two', cursive;
+  font-family: $handwritten;
 }
 
 .post_excerpt p { margin: 10px 0; }
@@ -196,7 +196,7 @@ h4 {
 
 .meta {
   display: table-cell;
-  font-family: 'Shadows Into Light Two', cursive;
+  font-family: $handwritten;
   font-size: 15px;
   padding-right: 20px;
   vertical-align: middle;
@@ -303,7 +303,7 @@ h4 {
  */
  p.error {
   font-size: 30px;
-  font-family: 'Shadows Into Light Two', cursive;
+  font-family: $handwritten;
   text-align: center;
 }
 
