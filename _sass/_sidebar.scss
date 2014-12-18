@@ -1,0 +1,64 @@
+.sidebar {
+  background-color: $complementary-color;
+  font-family: $serif-font-family;
+  height: 100%;
+  left: 0;
+  position: fixed;
+  top: 0;
+  width: 250px;
+  text-align: right;
+
+  header {
+    padding: 15px;
+
+    h1 {
+      font-size: 25px;
+      font-weight: 400;
+
+      a, a:link, a:visited {
+        color: $white;
+        text-decoration: none;
+      }
+    }
+
+    p {
+      color: $white;
+      font-size: 15px;
+    }
+  }
+
+  nav {
+    margin-top: 10%;
+    ul {
+      li {
+        font-family: $sans-serif-font-family;
+        list-style-type: none;
+        line-height: 70px;
+        letter-spacing: -1px;
+
+        a, a:link, a:visited {
+          padding-right: 15px;
+          display: block;
+          width: calc(100% - 15px);
+          color: $white;
+          font-size: 15px;
+          font-weight: 700;
+          text-decoration: none;
+          text-transform: uppercase;
+
+          &:hover {
+            background-color: $secondary-color;
+          }
+
+          &, i {
+            font-weight: 700;
+          }
+        }
+
+        @include respond(all-phones){
+          background-color: $secondary-color;
+        }
+      }
+    }
+  }
+}

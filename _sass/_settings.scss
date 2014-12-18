@@ -1,4 +1,20 @@
 $primary-color: #3c3936;
 $secondary-color: #ff4700;
 $complementary-color: #ff7e4c;
+$grey: #d8d4d4;
 $white: #ffffff;
+$black: #000000;
+$card-background: #f7f7f5;
+$card-shadow-color: #888888;
+
+
+$serif-font-family: 'Patua One', cursive;
+$sans-serif-font-family: 'Open Sans', sans-serif;
+$handwritten: 'Shadows Into Light Two', cursive;
+
+
+// Responsiveness Settings
+$document-width: 940px;
+$min-device-width: 320px;        // iPhone Portrait
+$tablet-device-width: 768px;     // iPad Portrait
+$max-device-width: 2880px;       // Max Document Size

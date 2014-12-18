@@ -4,14 +4,16 @@
 }
 
 body {
-  font: 10px Helvetica, Arial, sans-serif;
+  font-family: $sans-serif-font-family;
+  font-size: 10px;
+  font-weight: 300;
   text-align: left;
 }
 
-a, a:visited  {
+a, a:visited {
   color: #00a;
 }
 
-a:hover  {
+a:hover {
   color: #000;
 }

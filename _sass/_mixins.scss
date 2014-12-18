@@ -1,0 +1,74 @@
+@mixin respond($media) {
+  @if $media == portrait-phones {
+    @media only screen and (max-width: $min-device-width) { @content; }
+  }
+  @else if $media == landscape-phones {
+    @media only screen and (min-width: $min-device-width) and (max-width: $tablet-device-width) { @content; }
+  }
+  @else if $media == all-phones {
+    @media only screen and (max-width: $tablet-device-width) { @content; }
+  }
+  @else if $media == portrait-tablets {
+    @media only screen and (max-width: $tablet-device-width) { @content; }
+  }
+  @else if $media == tablets {
+    @media only screen and (min-width: $tablet-device-width) and (max-width: $document-width - 1) { @content; }
+  }
+  @else if $media == desktop {
+    @media only screen and (min-width: $tablet-device-width) { @content; }
+  }
+  @else if $media == document-width {
+    @media only screen and (max-width: $document-width + 20) { @content; }
+  }
+  @else if $media == large-screens {
+    @media only screen and (min-width: $max-device-width) { @content; }
+  }
+  @else if $media == print {
+    @media print { @content; }
+  }
+  @else {
+    @media only screen and ('#{$media}') { @content; }
+  }
+}
+
+/*
+ *
+ * Sticky footer
+ * http://ryanfait.com/resources/footer-stick-to-bottom-of-page/
+ *
+ */
+@mixin sticky-footer($height) {
+  html , body {
+    height: 100%;
+  }
+
+  .main-page-wrapper {
+    height: 100%;
+    height: auto !important;
+    margin: 0 auto (-$height);
+    min-height: 100%;
+  }
+
+  .page-footer, .push {
+    height: $height;
+  }
+}
+
+@mixin sticky-title($font-size, $letter-spacing, $text-shadow-distance) {
+  color: $white;
+  font-size: $font-size;
+  font-weight: bolder;
+  letter-spacing: $letter-spacing;
+  text-transform: uppercase;
+
+  @if $text-shadow-distance == large {
+    text-shadow: 5px 3px 0 $complementary-color;
+  } @else {
+    text-shadow: 2px 1px 0 $complementary-color;
+  }
+}
+
+@mixin support-text() {
+  font-style: italic;
+  color: $grey;
+}
