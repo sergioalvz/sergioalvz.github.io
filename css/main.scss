@@ -7,6 +7,7 @@
 @import "mixins";
 @import "sidebar";
 @import "frontpage";
+@import "archive";
 @import "footer";
 
 i {
@@ -63,7 +64,9 @@ i {
   padding-left: 50px;
 }
 
-strong { color: $complementary-color; }
+strong {
+  color: $complementary-color;
+}
 
 .content-wrapper {
   font-family: $sans-serif-font-family;
@@ -72,7 +75,9 @@ strong { color: $complementary-color; }
   max-width: 700px;
 }
 
-.content-wrapper h1 { margin-bottom: 10px; }
+.content-wrapper h1 {
+  margin-bottom: 10px;
+}
 
 .content-wrapper p a{
   color: $complementary-color;
@@ -83,30 +88,15 @@ strong { color: $complementary-color; }
   text-decoration: underline;
 }
 
-.archive-post-wrapper {
-  background-color: rgb(247, 247, 245);
-  box-shadow: 1px 1px 5px #888888;
-  font-size: 16px;
-  line-height: 24px;
-  margin-bottom: 32px;
-  padding: 32px;
+.post-comments-wrapper {
+  font-size: 11px;
+  display: inline-block;
+  vertical-align: text-top;
 }
 
-.archive-post-wrapper a, .archive-post-wrapper h1 a {
-  color: rgb(0, 0, 0);
-  -webkit-transition: all .25s;
-  -moz-transition: all .25s;
-  -o-transition: all .25s;
-  transition: all .25s;
+.post-comments-wrapper i {
+  font-size: 15px;
 }
-.archive-post-wrapper a:hover { color: $secondary-color; }
-
-.archive-post-wrapper .post { padding: 0; }
-
-.archive-post-wrapper .meta { display: inline; }
-
-.post-comments-wrapper { font-size: 11px; display: inline-block; vertical-align: text-top; }
-.post-comments-wrapper i { font-size: 15px; }
 
 .read-more {
   margin-top: 10px;
@@ -115,7 +105,9 @@ strong { color: $complementary-color; }
   font-weight: bolder;
 }
 
-h2 { font-size: 25px; }
+h2 {
+  font-size: 25px;
+}
 
 h3 {
   color: $secondary-color;
@@ -161,35 +153,13 @@ h4 {
 /* =================================== */
 
 
-.posts {  list-style-type: none; }
-
-.post_excerpt {
-  background-color: rgb(247, 247, 245);
-  box-shadow: 1px 1px 5px #888888;
-  font-family: $sans-serif-font-family;
-  font-size: 16px;
-
-  margin-bottom: 20px;
-  padding: 20px;
-}
-
-.post_excerpt span:first-child {
-  color: #5E5E5E;
-  font-family: $handwritten;
-}
-
-.post_excerpt p { margin: 10px 0; }
-
-.post_excerpt > a:first-of-type { margin-right: 5px; }
-
-
 /*
  *  ==================================
  * | POSTS
  *  ==================================
  */
 
- .post-meta-data {
+.post-meta-data {
   display: table;
   margin-top: 10px;
 }
@@ -202,20 +172,34 @@ h4 {
   vertical-align: middle;
 }
 
-#twitter-widget-0 { display: table-cell; }
+#twitter-widget-0 {
+  display: table-cell;
+}
 
 .post {
   font-family: $sans-serif-font-family;
   padding: 20px 0 50px;
 }
 
-.post img { max-width: 100%; }
-.post > hr { margin: 10px 0; }
+.post img {
+  max-width: 100%;
+}
 
-.post p, .post li { font-size: 16px; }
-.post p { margin-top: 10px; }
+.post > hr {
+  margin: 10px 0;
+}
 
-.post ul { padding: 10px 0 10px 10px; }
+.post p, .post li {
+  font-size: 16px;
+}
+
+.post p {
+  margin-top: 10px;
+}
+
+.post ul {
+  padding: 10px 0 10px 10px;
+}
 /* =================================== */
 
 
@@ -232,7 +216,9 @@ h4 {
   padding: 10px;
 }
 
-.post ul, .post ol { margin-left: 13.5px; }
+.post ul, .post ol {
+  margin-left: 13.5px;
+}
 
 .post code {
   background-color: rgba(238, 238, 255, 0);
@@ -240,7 +226,9 @@ h4 {
   padding: 0 2px;
 }
 
-.post pre code { border: none; }
+.post pre code {
+  border: none;
+}
 
 .post pre.terminal {
   background-color: #333;
@@ -248,7 +236,9 @@ h4 {
   color: #FFF;
 }
 
-.post pre.terminal code { background-color: #333; }
+.post pre.terminal code {
+  background-color: #333;
+}
 /* =================================== */
 
 /*
@@ -296,12 +286,7 @@ h4 {
 }
 /* =================================== */
 
-/*
- *  ==================================
- * | PAGINATION
- *  ==================================
- */
- p.error {
+p.error {
   font-size: 30px;
   font-family: $handwritten;
   text-align: center;
@@ -313,4 +298,6 @@ p.error > a, p.error > a:link, p.error > a:visited {
   color: rgb(0, 0, 0);
 }
 
-p.error img { max-height: 10px; }
+p.error img {
+  max-height: 10px;
+}

@@ -1,0 +1,27 @@
+.archive-post-wrapper {
+  background-color: $card-background;
+  box-shadow: 1px 1px 5px $card-shadow-color;
+  margin-bottom: 32px;
+  padding: 32px;
+
+  > a, > h1 a {
+    color: $black;
+    text-decoration: none;
+    -webkit-transition: all .25s;
+    -moz-transition: all .25s;
+    -o-transition: all .25s;
+    transition: all .25s;
+
+    &:hover {
+      color: $secondary-color;
+    }
+  }
+}
+
+.archive-post-wrapper .post {
+  padding: 0;
+}
+
+.archive-post-wrapper .meta {
+  display: inline;
+}

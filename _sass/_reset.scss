@@ -4,7 +4,9 @@
 }
 
 body {
-  font: 10px $sans-serif-font-family;
+  font-family: $sans-serif-font-family;
+  font-size: 10px;
+  font-weight: 300;
   text-align: left;
 }
 

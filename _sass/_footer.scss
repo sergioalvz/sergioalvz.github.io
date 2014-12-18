@@ -54,6 +54,7 @@
         text-align: justify;
         max-width: 350px;
         margin: 0 auto;
+        font-style: normal;
 
         @include respond(all-phones) {
           margin: 0;
