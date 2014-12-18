@@ -33,11 +33,13 @@
       li {
         font-family: $sans-serif-font-family;
         list-style-type: none;
-        padding-right: 15px;
-        line-height: 25px;
+        line-height: 70px;
         letter-spacing: -1px;
 
         a, a:link, a:visited {
+          padding-right: 15px;
+          display: block;
+          width: calc(100% - 15px);
           color: $white;
           font-size: 15px;
           font-weight: 700;
@@ -45,12 +47,16 @@
           text-transform: uppercase;
 
           &:hover {
-            color: $primary-color;
+            background-color: $secondary-color;
           }
 
           &, i {
             font-weight: 700;
           }
+        }
+
+        @include respond(all-phones){
+          background-color: $secondary-color;
         }
       }
     }
