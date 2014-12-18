@@ -1,4 +1,4 @@
-@include sticky-footer(200px);
+@include sticky-footer(220px);
 @include respond(all-phones) {
   @include sticky-footer(350px);
 }
@@ -10,28 +10,15 @@
 
   footer {
     color: $white;
-    padding: 20px 0;
 
     > div {
       width: calc(50% - 20px);
       float: left;
-      padding: 0 10px;
-
-      &:first-child {
-        padding-top: 20px;
-      }
+      padding: 10px;
 
       @include respond(all-phones) {
         width: calc(100% - 20px);
         float: none;
-
-        &:first-child {
-          padding-top: 10px;
-        }
-
-        &:last-child {
-          margin-top: 10px;
-        }
       }
     }
 

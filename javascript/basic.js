@@ -59,6 +59,7 @@ $( document ).ready(function(){
   Salvarezsuar.SidebarModule.installSideMenuBar();
 
   $( '.menu-slider' ).click(function(event) {
+    event.preventDefault();
     if(Salvarezsuar.SidebarModule.isSideBarMenuDisplayed()) {
       Salvarezsuar.SidebarModule.collapseSideBarMenu();
     }else {
@@ -66,5 +67,3 @@ $( document ).ready(function(){
     }
   });
 });
-
-$( window ).resize(Salvarezsuar.SidebarModule.installSideMenuBar);
