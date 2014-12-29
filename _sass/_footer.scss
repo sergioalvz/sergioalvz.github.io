@@ -22,30 +22,31 @@
       }
     }
 
-    p {
+    p span {
+      @include support-text;
+    }
+
+    p, a {
       font-size: 14px;
-
-      a {
-        color: $white;
-        text-decoration: none;
-      }
-
-      span {
-        @include support-text;
-      }
+      color: $white;
+      text-decoration: none;
     }
 
     .about {
-      p {
-        @include support-text;
-        text-align: justify;
+
+      h1, p {
         max-width: 350px;
         margin: 0 auto;
-        font-style: normal;
 
         @include respond(all-phones) {
           margin: 0;
         }
+      }
+
+      p {
+        @include support-text;
+        text-align: justify;
+        font-style: normal;
       }
 
       i {
@@ -56,12 +57,7 @@
     }
 
     .social {
-      h1 {
-        @include sticky-title(18px, -1px, close);
-        font-weight: 700;
-        margin: 0 0 10px;
-      }
-
+      max-width: 350px;
       p {
         margin-bottom: 5px;
 
@@ -69,6 +65,24 @@
           margin-left: 0;
           text-align: left;
         }
+      }
+
+      ul {
+        margin-top: 15px;
+        text-align: center;
+        li {
+          display: inline-block;
+          a {
+            font-size: 35px;
+          }
+        }
+      }
+    }
+
+    .about, .social {
+      h1 {
+        @include sticky-title(18px, -1px, close);
+        font-weight: 700;
       }
     }
   }

@@ -26,16 +26,16 @@ i {
   background-color: $complementary-color;
   text-align: center;
   margin: 0 auto;
-}
 
-.circle.tiny {
-  width: 50px;
-  height: 50px;
-}
+  &.tiny {
+    width: 50px;
+    height: 50px;
+  }
 
-.circle.large {
-  width: 200px;
-  height: 200px;
+  &.large {
+    width: 200px;
+    height: 200px;
+  }
 }
 
 .menu-slider {

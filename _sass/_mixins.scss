@@ -72,3 +72,14 @@
   font-style: italic;
   color: $grey;
 }
+
+@mixin darken-when-hover() {
+  -o-transition: color .2s ease-out;
+  -ms-transition: color .2s ease-out;
+  -moz-transition: color .2s ease-out;
+  -webkit-transition: color .2s ease-out;
+
+  &:hover {
+    color: rgba(0, 0, 0, 0.25);
+  }
+}
