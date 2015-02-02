@@ -80,6 +80,6 @@
   -webkit-transition: color .2s ease-out;
 
   &:hover {
-    color: rgba(0, 0, 0, 0.25);
+    color: darken($secondary-color, 30%);
   }
 }

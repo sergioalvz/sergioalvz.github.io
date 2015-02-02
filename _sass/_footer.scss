@@ -1,6 +1,6 @@
 @include sticky-footer(220px);
 @include respond(all-phones) {
-  @include sticky-footer(350px);
+  @include sticky-footer(270px);
 }
 
 .page-footer {
@@ -34,6 +34,11 @@
 
     .about {
 
+      h1 {
+        @include sticky-title(18px, -1px, close);
+        font-weight: 700;
+      }
+
       h1, p {
         max-width: 350px;
         margin: 0 auto;
@@ -49,6 +54,10 @@
         font-style: normal;
       }
 
+      a {
+        border-bottom: 1px dotted $white;
+      }
+
       i {
         margin-left: 0;
         text-align: left;
@@ -57,32 +66,21 @@
     }
 
     .social {
-      max-width: 350px;
-      p {
-        margin-bottom: 5px;
+      display: -webkit-flex;
+      display: flex;
 
-        i {
-          margin-left: 0;
-          text-align: left;
-        }
-      }
+      justify-content: center;
 
-      ul {
-        margin-top: 15px;
-        text-align: center;
-        li {
-          display: inline-block;
-          a {
-            font-size: 35px;
+      > div {
+        padding: 10px 15px;
+        background-color: darken($primary-color, 1%);
+        a {
+          font-size: 20px;
+
+          i {
+            display: inline;
           }
         }
-      }
-    }
-
-    .about, .social {
-      h1 {
-        @include sticky-title(18px, -1px, close);
-        font-weight: 700;
       }
     }
   }
