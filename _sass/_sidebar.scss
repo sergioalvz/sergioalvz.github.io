@@ -11,6 +11,17 @@
   header {
     padding: 15px;
 
+    .avatar {
+      float: right;
+      width: 160px;
+      text-align: center;
+      margin-bottom: 10px;
+      img {
+        max-width: 80px;
+        border-radius: 50%;
+      }
+    }
+
     h1 {
       font-size: 25px;
       font-weight: 400;
