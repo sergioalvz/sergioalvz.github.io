@@ -89,6 +89,11 @@
       h4 {
         @include sticky-title(25px, -1px, close);
         font-family: $serif-font-family;
+
+        i {
+          margin-left: 0;
+          text-align: left;
+        }
       }
 
       ul {
@@ -128,6 +133,34 @@
         span {
           @include support-text;
           font-size: 14px;
+        }
+      }
+    }
+
+    .personal-info {
+      p {
+        font-size: 14px;
+        line-height: 30px;
+
+        &.title {
+          text-transform: uppercase;
+          font-size: 16px;
+          font-weight: 700;
+          letter-spacing: -1px;
+        }
+
+        &.subtitle {
+          @include support-text;
+
+          font-size: 14px;
+          line-height: 10px;
+
+          margin-bottom: 15px;
+        }
+
+        i {
+          margin-left: 0;
+          text-align: left;
         }
       }
     }
