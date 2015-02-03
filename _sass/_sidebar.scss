@@ -3,11 +3,16 @@
   font-family: $serif-font-family;
   height: 100%;
   left: 0;
+  overflow-y: auto;
   position: fixed;
+  text-align: right;
   top: 0;
   width: 250px;
-  text-align: right;
   z-index: 9999;
+
+  &::-webkit-scrollbar {
+    display: none;
+  }
 
   header {
     padding: 15px;
@@ -64,7 +69,7 @@
         }
 
         @include respond(all-phones){
-          line-height: 70px;
+          line-height: 50px;
         }
       }
     }
