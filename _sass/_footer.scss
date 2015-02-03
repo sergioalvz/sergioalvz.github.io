@@ -1,6 +1,6 @@
 @include sticky-footer(220px);
 @include respond(all-phones) {
-  @include sticky-footer(270px);
+  @include sticky-footer(320px);
 }
 
 .page-footer {
