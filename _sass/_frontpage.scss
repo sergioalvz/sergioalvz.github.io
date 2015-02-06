@@ -3,7 +3,7 @@
   font-weight: 300;
 
   h3 {
-    @include sticky-title(65px, -9px, large);
+    @include sticky-title(65px, -5px, large);
     font-weight: 700;
     line-height: 59px;
     margin-bottom: 50px;
@@ -88,7 +88,6 @@
 
       h4 {
         @include sticky-title(25px, -1px, close);
-        font-family: $serif-font-family;
 
         i {
           margin-left: 0;

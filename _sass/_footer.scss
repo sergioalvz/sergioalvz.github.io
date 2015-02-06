@@ -1,6 +1,12 @@
-@include sticky-footer(220px);
+@include sticky-footer(235px);
+
 @include respond(all-phones) {
   @include sticky-footer(320px);
+}
+
+@include respond("max-width: 360px") {
+  @include sticky-footer(360px);
+
 }
 
 .page-footer {
@@ -11,7 +17,7 @@
   footer {
     color: $white;
 
-    > div {
+    .about, .social {
       width: calc(50% - 20px);
       float: left;
       padding: 10px;
@@ -66,24 +72,43 @@
     }
 
     .social {
-      display: -webkit-flex;
-      display: flex;
+      .social-links-wrapper {
+        display: -webkit-flex;
+        display: flex;
 
-      -webkit-flex-flow: row wrap;
-      flex-flow: row wrap;
+        -webkit-flex-flow: row wrap;
+        flex-flow: row wrap;
 
-      justify-content: center;
+        justify-content: center;
 
-      > div {
-        padding: 10px 15px;
-        background-color: darken($primary-color, 1%);
-        a {
-          font-size: 20px;
+        > div {
+          display: table;
+          min-height: 50px;
+          min-width: 80px;
+          text-align: center;
 
-          i {
-            display: inline;
+          background-color: darken($primary-color, 1%);
+
+          a {
+            display: table-cell;
+            font-size: 20px;
+            vertical-align: middle;
+
+            i {
+              display: inline;
+            }
           }
         }
+      }
+
+    }
+
+    .twitter-follow-button-wrapper {
+      clear: both;
+      padding-top: 20px;
+
+      .twitter-follow-button {
+        margin: 0 auto;
       }
     }
   }

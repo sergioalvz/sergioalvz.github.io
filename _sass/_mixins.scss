@@ -56,6 +56,7 @@
 
 @mixin sticky-title($font-size, $letter-spacing, $text-shadow-distance) {
   color: $white;
+  font-family: $serif-font-family;
   font-size: $font-size;
   font-weight: bolder;
   letter-spacing: $letter-spacing;
