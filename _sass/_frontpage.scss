@@ -75,6 +75,19 @@
       font-weight: 700;
       letter-spacing: -1px;
     }
+
+    @include respond(all-phones) {
+      width: 105px;
+      height: 100px;
+
+      i {
+        font-size: 25px;
+      }
+
+      p {
+        font-size: 13px;
+      }
+    }
   }
 }
 
