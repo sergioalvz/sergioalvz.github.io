@@ -7,7 +7,7 @@
 @import "mixins";
 @import "sidebar";
 @import "frontpage";
-@import "archive";
+@import "notes";
 @import "footer";
 
 i {
@@ -238,51 +238,6 @@ h4 {
 
 .post pre.terminal code {
   background-color: #333;
-}
-/* =================================== */
-
-/*
- *  ==================================
- * | PAGINATION
- *  ==================================
- */
- .pagination {
-  font-family: $sans-serif-font-family;
-  font-size: 16px;
-  margin-top: 20px;
-  text-align: center;
-}
-
-.pagination .previous, .pagination .next {
-  background-color: $secondary-color;
-  border: 1px solid #FF0000;
-  border-radius: 2.5px;
-  color: rgb(255, 255, 255);
-  display: inline-block;
-  margin: 2.5px 0;
-  padding: 10px 0;
-  text-decoration: none;
-  width: 75px;
-
-  -webkit-transition: all .25s;
-  -moz-transition: all .25s;
-  -o-transition: all .25s;
-  transition: all .25s;
-}
-
-.pagination span.previous, .pagination span.next {
-  background-color: rgb(219, 219, 219);
-  border: none;
-  color: rgb(163, 163, 163);
-  box-shadow: none;
-}
-
-.pagination a.previous:hover, .pagination a.next:hover {
-  background-color: #FF6A30;
-}
-
-.pagination span.page_number {
-  margin: 0 10px;
 }
 /* =================================== */
 

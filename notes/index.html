@@ -15,17 +15,21 @@ title: Notes
   {% endfor %}
 
   <!-- Pagination links -->
-  <div class="pagination">
+  <div class="pagination-wrapper">
     {% if paginator.previous_page %}
-      <a href="{{ paginator.previous_page_path | prepend: site.baseurl | replace: '//', '/' }}" class="previous">Previous</a>
+      <a href="{{ paginator.previous_page_path | prepend: site.baseurl | replace: '//', '/' }}" class="pagination-button">
+        <i class="fa fa-hand-o-left"></i>Previous
+      </a>
     {% else %}
-      <span class="previous">Previous</span>
+      <span class="pagination-button disabled">Previous</span>
     {% endif %}
-    <span class="page_number">{{ paginator.page }} of {{ paginator.total_pages }}</span>
+    <span class="page-number">{{ paginator.page }} of {{ paginator.total_pages }}</span>
     {% if paginator.next_page %}
-      <a href="{{ paginator.next_page_path | prepend: site.baseurl | replace: '//', '/' }}" class="next">Next</a>
+      <a href="{{ paginator.next_page_path | prepend: site.baseurl | replace: '//', '/' }}" class="pagination-button">
+        Next <i class="fa fa-hand-o-right"></i>
+      </a>
     {% else %}
-      <span class="next">Next</span>
+      <span class="pagination-button disabled">Next</span>
     {% endif %}
   </div>
 </div>
