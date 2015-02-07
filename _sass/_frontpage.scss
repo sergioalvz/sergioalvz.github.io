@@ -76,7 +76,7 @@
       letter-spacing: -1px;
     }
 
-    @include respond(all-phones) {
+    @include respond("max-width: 610px") {
       width: 105px;
       height: 100px;
 
