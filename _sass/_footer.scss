@@ -69,6 +69,11 @@
         text-align: left;
         min-width: inherit;
       }
+
+      @include respond(all-phones) {
+        max-width: 350px;
+        margin: 0 auto;
+      }
     }
 
     .social {
