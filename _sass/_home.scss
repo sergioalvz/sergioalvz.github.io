@@ -1,0 +1,48 @@
+.home {
+  font-family: $sans-serif-font-family;
+  padding: 20px;
+
+  background-color: $home-background-color;
+}
+
+.home__talk {
+  float: right;
+
+  color: $work-background-color;
+  text-decoration: none;
+}
+
+.home__title {
+  clear: both;
+  font-size: 72px;
+  font-weight: 100;
+  text-transform: uppercase;
+}
+
+.home__title__strong {
+  font-weight: 700;
+}
+
+.home__subtitle {
+  font-size: 120px;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.home__title,
+.home__subtitle {
+  text-align: center;
+
+  color: $work-background-color;
+}
+
+.home__buttons {
+  text-align: center;
+}
+
+.home__buttons__button {
+  color: $complementary-color;
+  font-weight: 400;
+
+  text-transform: uppercase;
+}

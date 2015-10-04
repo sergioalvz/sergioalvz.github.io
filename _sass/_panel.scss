@@ -1,0 +1,37 @@
+.panel {
+  min-height: calc(700px - 40px);
+  height: calc(100vh - 40px);
+  padding: 20px;
+}
+
+.panel__title {
+  font-family: $sans-serif-font-family;
+  font-size: 48px;
+  font-weight: 700;
+  margin-top: 50px;
+
+  text-transform: uppercase;
+}
+
+.panel__title__underscore {
+  border-style: solid;
+  border-width: 3px;
+  margin: 10px 0 50px;
+  text-align: left;
+  width: 80px;
+}
+
+.panel__text {
+  max-width: 50%;
+  font-family: $serif-font-family;
+  font-size: 24px;
+  font-weight: 100;
+  line-height: 30px;
+  margin-bottom: 15px;
+}
+
+.panel__text__highlight {
+  padding: 0 8px;
+
+  font-weight: 700;
+}

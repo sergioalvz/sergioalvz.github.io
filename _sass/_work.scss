@@ -1,0 +1,17 @@
+.work {
+  background-color: $work-background-color;
+}
+
+.work__title,
+.work__title__underscore {
+  color: $about-background-color;
+}
+
+.work__text {
+  color: $about-background-color;
+}
+
+.work__text__highlight {
+  background-color: $about-background-color;
+  color: $work-background-color;
+}
