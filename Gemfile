@@ -1,4 +1,7 @@
-# A sample Gemfile
-source "https://rubygems.org"
+source 'https://rubygems.org'
 
-gem "github-pages"
+gem 'github-pages'
+
+group :development do
+  gem 'scss_lint'
+end

@@ -1,10 +1,8 @@
-name:           Sergio's Blog
-description:    Software dev experiences
-url:            http://sergioalvarezsuarez.com
+name:           Sergio Álvarez-Suárez
+description:    Software Engineer
+url:            http://sergioalvz.com
 markdown:       redcarpet
 highlighter:    pygments
-paginate:       5
-paginate_path:  "notes/page:num"
 
 exclude: [Gemfile, Gemfile.lock]
 
