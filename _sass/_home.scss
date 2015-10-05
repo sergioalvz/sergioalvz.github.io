@@ -5,6 +5,17 @@
   background-color: $home-background-color;
 }
 
+.home__wrapper {
+  display: table;
+  height: 100%;
+  width: 100%;
+}
+
+.home__wrapper__content {
+  display: table-cell;
+  vertical-align: middle;
+}
+
 .home__talk {
   float: right;
 
@@ -13,7 +24,6 @@
 }
 
 .home__title {
-  clear: both;
   font-size: 72px;
   font-weight: 100;
   text-transform: uppercase;
@@ -31,6 +41,7 @@
 
 .home__title,
 .home__subtitle {
+  margin-bottom: 50px;
   text-align: center;
 
   color: $work-background-color;
@@ -45,4 +56,8 @@
   font-weight: 400;
 
   text-transform: uppercase;
+
+  &:first-of-type {
+    margin-right: 10px;
+  }
 }

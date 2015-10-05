@@ -1,5 +1,7 @@
 .about {
   background-color: $about-background-color;
+  display: flex;
+  flex-direction: column;
 }
 
 .about__title,
@@ -14,4 +16,31 @@
 .about__text__highlight {
   background-color: $work-background-color;
   color: $about-background-color;
+}
+
+.about__links {
+  flex: 1;
+  margin-top: 50px;
+}
+
+.about__link {
+  color: $work-background-color;
+}
+
+%base-footer-styles {
+  color: lighten($about-background-color, 50%);
+  font-family: $sans-serif-font-family;
+  font-weight: 100;
+  text-align: center;
+}
+
+.about__footer {
+  @extend %base-footer-styles;
+}
+
+.about__footer__subtitle {
+  @extend %base-footer-styles;
+
+  font-size: 14px;
+  margin-top: 5px;
 }
