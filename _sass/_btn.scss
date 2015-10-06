@@ -5,13 +5,9 @@
   padding: 10px;
 
   cursor: pointer;
+  text-decoration: none;
 }
 
 .btn--is-large {
   padding: 20px 50px;
-}
-
-.btn__text {
-  font-family: $sans-serif-font-family;
-  font-weight: normal;
 }

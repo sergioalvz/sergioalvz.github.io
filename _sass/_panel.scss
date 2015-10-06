@@ -31,16 +31,16 @@
   margin-bottom: 15px;
 }
 
-.panel__text__highlight {
-  padding: 0 8px;
-
-  font-weight: 700;
-}
-
 .panel__link {
   font-family: $serif-font-family;
   font-size: 24px;
   font-weight: 100;
   line-height: 30px;
   margin-bottom: 15px;
+}
+
+.panel__text__highlight {
+  padding: 0 8px;
+
+  font-weight: 700;
 }

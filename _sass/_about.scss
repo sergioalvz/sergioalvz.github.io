@@ -23,8 +23,16 @@
   margin-top: 50px;
 }
 
+.about__links__link {
+  margin-bottom: 5px;
+
+  &:last-of-type {
+    margin-bottom: 0;
+  }
+}
+
 .about__link {
-  color: $work-background-color;
+  text-decoration: none;
 }
 
 %base-footer-styles {
