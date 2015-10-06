@@ -10,4 +10,8 @@
 
 .btn--is-large {
   padding: 20px 50px;
+
+  @include respond('slim') {
+    padding: 15px 35px;
+  }
 }

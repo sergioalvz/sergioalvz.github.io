@@ -21,6 +21,10 @@
 .about__links {
   flex: 1;
   margin-top: 50px;
+
+  @include respond('slim') {
+    margin: 10px 0 20px;
+  }
 }
 
 .about__links__link {
@@ -33,6 +37,12 @@
 
 .about__link {
   text-decoration: none;
+}
+
+.about__links__link .about__link {
+  @include respond('slim') {
+    font-size: 14px;
+  }
 }
 
 %base-footer-styles {

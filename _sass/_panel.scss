@@ -2,6 +2,11 @@
   min-height: calc(700px - 40px);
   height: calc(100vh - 40px);
   padding: 20px;
+
+  @include respond('slim') {
+    min-height: auto;
+    height: auto;
+  }
 }
 
 .panel__title {
@@ -12,6 +17,11 @@
   margin-top: 50px;
 
   text-transform: uppercase;
+
+  @include respond('slim') {
+    font-size: 32px;
+    margin-top: 30px;
+  }
 }
 
 .panel__title__underscore {
@@ -23,12 +33,16 @@
 }
 
 .panel__text {
-  max-width: 50%;
+  max-width: 650px;
   font-family: $serif-font-family;
   font-size: 24px;
   font-weight: 100;
   line-height: 30px;
   margin-bottom: 15px;
+
+  @include respond('slim') {
+    font-size: 18px;
+  }
 }
 
 .panel__link {
@@ -37,6 +51,10 @@
   font-weight: 100;
   line-height: 30px;
   margin-bottom: 15px;
+
+  @include respond('slim') {
+    font-size: 18px;
+  }
 }
 
 .panel__text__highlight {

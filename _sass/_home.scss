@@ -9,6 +9,10 @@
   display: table;
   height: 100%;
   width: 100%;
+
+  @include respond('slim') {
+    margin-top: 100px;
+  }
 }
 
 .home__wrapper__content {
@@ -27,6 +31,10 @@
   font-size: 72px;
   font-weight: 100;
   text-transform: uppercase;
+
+  @include respond('slim') {
+    font-size: 32px;
+  }
 }
 
 .home__title__strong {
@@ -37,6 +45,10 @@
   font-size: 120px;
   font-weight: 700;
   text-transform: uppercase;
+
+  @include respond('slim') {
+    font-size: 48px;
+  }
 }
 
 .home__title,
@@ -59,9 +71,13 @@
 
   transition: background-color 0.1s ease-in;
 
-  &:first-of-type {
-    margin-right: 10px;
+  @include respond('slim') {
+    margin-top: 10px;
   }
+}
+
+.home__buttons__button:first-of-type {
+  margin-right: 10px;
 }
 
 .home__buttons__button:hover {

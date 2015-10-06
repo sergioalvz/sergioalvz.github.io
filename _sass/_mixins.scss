@@ -1,0 +1,7 @@
+@mixin respond($media) {
+  @if $media == 'slim' {
+    @media only screen and (max-width: '710px') {
+      @content;
+    }
+  }
+}
