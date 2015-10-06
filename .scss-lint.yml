@@ -1,3 +1,5 @@
+exclude: '_sass/lib/**'
+
 linters:
 
   BangFormat:
