@@ -4,7 +4,7 @@ title: Home
 type: front-page
 ---
 
-<section class="panel home">
+<section class="panel home" id="home">
   <a href="mailto:sergio@codecoolture.com" class="btn home__talk">
     Let's talk!
   </a>
@@ -27,38 +27,49 @@ type: front-page
 </section>
 
 <section class="panel work" id="work">
-  <h1 class="work__title panel__title">work</h1>
-  <hr class="work__title__underscore panel__title__underscore">
+  <a href="#home" go-to="#home" class="btn nav-button">Go top</a>
 
-  <p class="panel__text work__text">I am a <span class="panel__text__highlight work__text__highlight">Front-end Engineer</span> with a solid understanding about back-end technologies who likes to create fully dynamic web applications by following the <span class="panel__text__highlight work__text__highlight">highest quality standards</span>.</p>
-  <p class="panel__text work__text">I have experience developing <span class="panel__text__highlight work__text__highlight">multi-device applications</span> with Cordova and turning responsive designs into <span class="panel__text__highlight work__text__highlight">beautiful websites</span>.</p>
+  <div class="work__content">
+    <h1 class="work__title panel__title">work</h1>
+    <hr class="work__title__underscore panel__title__underscore">
 
-  <p class="panel__text work__text"><span class="panel__text__highlight work__text__highlight">I'm available for freelancing work</span>.</p>
+    <p class="panel__text work__text">I am a <span class="panel__text__highlight work__text__highlight">Front-end Engineer</span> with a solid understanding about back-end technologies who likes to create fully dynamic web applications by following the <span class="panel__text__highlight work__text__highlight">highest quality standards</span>.</p>
+    <p class="panel__text work__text">I have experience developing <span class="panel__text__highlight work__text__highlight">multi-device applications</span> with Cordova and turning responsive designs into <span class="panel__text__highlight work__text__highlight">beautiful websites</span>.</p>
+
+    <p class="panel__text work__text"><span class="panel__text__highlight work__text__highlight">I'm available for freelancing work</span>.</p>
+  </div>
+
+  <a href="#about" go-to="#about" class="btn nav-button">Go about</a>
 </section>
 
 <section class="panel about" id="about">
-  <h1 class="about__title panel__title">about</h1>
-  <hr class="about__title__underscore panel__title__underscore">
+  <a href="#work" go-to="#work" class="btn nav-button">Go work</a>
+  <a href="#home" go-to="#home" class="btn nav-button">Go top</a>
 
-  <p class="panel__text about__text">Hi there! I'm Sergio; I have a Post-Graduate Master's Degree in Web Engineering @ University of Oviedo and I'm currently working at <a class="panel__link about__link panel__text__highlight about__text__highlight" href="http://www.sweetspotintelligence.com/en/" target="blank">Sweetspot Intelligence</a> as a Full-Stack Software Engineer.</p>
-  <p class="panel__text about__text">Traveling to the Principality of Asturias? Don't hesitate to drop me a line if you want to talk about software engineering and discovering this <a href="http://www.lagosdesaliencia.com/" class="panel__link about__link panel__text__highlight about__text__highlight">little piece of paradise</a>!</p>
+  <div class="about__content">
+    <h1 class="about__title panel__title">about</h1>
+    <hr class="about__title__underscore panel__title__underscore">
 
-  <ul class="about__links">
-    <li class="about__links__link">
-      <a class="panel__link about__link panel__text__highlight about__text__highlight" href="https://linkedin.com/in/sergioalvarezsuarez" target="blank">linkedin.com/in/sergioalvarezsuarez</a>
-    </li>
-    <li class="about__links__link">
-      <a class="panel__link about__link panel__text__highlight about__text__highlight" href="https://github.com/sergioalvz" target="blank">github.com/sergioalvz</a>
-    </li>
-    <li class="about__links__link">
-      <a class="panel__link about__link panel__text__highlight about__text__highlight" href="https://twitter.com/sergioalvz_" target="blank">twitter.com/sergioalvz_</a>
-    </li>
-    <li class="about__links__link">
-      <a class="panel__link about__link panel__text__highlight about__text__highlight" href="https://instagram.com/sergioalvz_" target="blank">instagram.com/sergioalvz_</a>
-    </li>
-  </ul>
+    <p class="panel__text about__text">Hi there! I'm Sergio; I have a Post-Graduate Master's Degree in Web Engineering @ University of Oviedo and I'm currently working at <a class="panel__link about__link panel__text__highlight about__text__highlight" href="http://www.sweetspotintelligence.com/en/" target="blank">Sweetspot Intelligence</a> as a Full-Stack Software Engineer.</p>
+    <p class="panel__text about__text">Traveling to the Principality of Asturias? Don't hesitate to drop me a line if you want to talk about software engineering and discovering this <a href="http://www.lagosdesaliencia.com/" class="panel__link about__link panel__text__highlight about__text__highlight">little piece of paradise</a>!</p>
 
-  <p class="about__footer">Thanks for coming! :)</p>
+    <ul class="about__links">
+      <li class="about__links__link">
+        <a class="panel__link about__link panel__text__highlight about__text__highlight" href="https://linkedin.com/in/sergioalvarezsuarez" target="blank">linkedin.com/in/sergioalvarezsuarez</a>
+      </li>
+      <li class="about__links__link">
+        <a class="panel__link about__link panel__text__highlight about__text__highlight" href="https://github.com/sergioalvz" target="blank">github.com/sergioalvz</a>
+      </li>
+      <li class="about__links__link">
+        <a class="panel__link about__link panel__text__highlight about__text__highlight" href="https://twitter.com/sergioalvz_" target="blank">twitter.com/sergioalvz_</a>
+      </li>
+      <li class="about__links__link">
+        <a class="panel__link about__link panel__text__highlight about__text__highlight" href="https://instagram.com/sergioalvz_" target="blank">instagram.com/sergioalvz_</a>
+      </li>
+    </ul>
+
+    <p class="about__footer">Thanks for coming! :)</p>
+  </div>
 </section>
 
 <script type="text/javascript" src="javascript/main.js"></script>

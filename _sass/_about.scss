@@ -1,7 +1,12 @@
 .about {
   background-color: $about-background-color;
+}
+
+.about__content {
   display: flex;
   flex-direction: column;
+  height: calc(100% - #{$btn-size});
+  width: 100%;
 }
 
 .about__title,
@@ -20,7 +25,6 @@
 
 .about__links {
   flex: 1;
-  margin-top: 50px;
 
   @include respond('slim') {
     margin: 10px 0 20px;

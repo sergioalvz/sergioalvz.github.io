@@ -1,0 +1,16 @@
+.nav-button {
+  float: right;
+  margin-right: 10px;
+
+  color: $complementary-color;
+  font-family: $sans-serif-font-family;
+  text-transform: uppercase;
+
+  @include respond('slim') {
+    display: none;
+  }
+
+  &:first-of-type {
+    margin-right: 0;
+  }
+}

@@ -3,11 +3,14 @@
 
 @import 'lib/reset';
 
+@import 'settings';
+
 @import 'mixins';
 
-@import 'settings';
+@import 'btn';
+@import 'nav-button';
 @import 'panel';
+
 @import 'home';
 @import 'work';
 @import 'about';
-@import 'btn';
