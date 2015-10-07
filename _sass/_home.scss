@@ -61,6 +61,10 @@
 
 .home__buttons {
   text-align: center;
+
+  @include respond('slim') {
+    margin-bottom: 30px;
+  }
 }
 
 .home__buttons__button {
