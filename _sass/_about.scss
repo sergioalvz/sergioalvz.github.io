@@ -59,19 +59,14 @@
 %base-footer-styles {
   color: lighten($about-background-color, 50%);
   font-family: $sans-serif-font-family;
-  font-weight: 100;
+  font-weight: 300;
   text-align: center;
 }
 
 .about__footer {
   @extend %base-footer-styles;
-}
 
-.about__footer__subtitle {
-  @extend %base-footer-styles;
-
-  font-size: 14px;
-  margin-top: 5px;
+  font-size: 12px;
 }
 
 .about .nav-btn {
