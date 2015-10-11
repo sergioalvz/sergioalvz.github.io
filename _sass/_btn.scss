@@ -13,6 +13,8 @@ $btn-size: ($btn-padding-size * 2) + ($btn-border-size * 2) + $btn-font-size;
 
   cursor: pointer;
   text-decoration: none;
+
+  transition: background-color 0.1s ease-in;
 }
 
 .btn--is-large {

@@ -72,3 +72,9 @@
 .about .nav-btn {
   color: $work-background-color;
 }
+
+.about .nav-btn:hover {
+  background-color: $work-background-color;
+  border-color: $work-background-color;
+  color: $about-background-color;
+}
