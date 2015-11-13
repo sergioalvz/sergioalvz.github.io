@@ -1,5 +1,28 @@
 .about {
-  background-color: $about-background-color;
+  min-height: 700px;
+  height: 100vh;
+  padding: 0;
+
+  background: url('../assets/images/sergio.jpg') no-repeat center center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+
+  @include respond('slim') {
+    min-height: 0;
+    height: auto;
+  }
+}
+
+.about__colorizer {
+  height: calc(100% - 40px);
+  padding: 20px;
+  background-color: rgba($about-background-color, 0.2);
+
+  @include respond('slim') {
+    height: auto;
+  }
 }
 
 .about__content {
