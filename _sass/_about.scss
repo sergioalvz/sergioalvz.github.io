@@ -3,7 +3,7 @@
   height: 100vh;
   padding: 0;
 
-  background: url('../assets/images/sergio.jpg') no-repeat center center fixed;
+  background: url('../assets/images/sergio.jpg') no-repeat center center;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -56,7 +56,7 @@
 .about__links__link {
   padding: 10px 15px;
 
-  background-color: rgba($work-background-color, 0.7);
+  background-color: $work-background-color;
   color: $home-background-color;
 }
 
