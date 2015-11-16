@@ -51,6 +51,10 @@
 
 .about__links {
   display: flex;
+
+  @include respond('slim') {
+    justify-content: center;
+  }
 }
 
 .about__links__link {
