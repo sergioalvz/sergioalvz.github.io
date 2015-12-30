@@ -31,10 +31,6 @@
   font-size: 72px;
   font-weight: 100;
   text-transform: uppercase;
-
-  @include respond('slim') {
-    font-size: 32px;
-  }
 }
 
 .home__title__strong {
@@ -42,24 +38,30 @@
 }
 
 .home__subtitle {
-  font-size: 120px;
+  font-size: 72px;
   font-weight: 700;
   text-transform: uppercase;
+}
 
-  @include respond('slim') {
-    font-size: 48px;
-  }
+.home__subtitle__adjective {
+  font-family: $handwriting-font-family;
 }
 
 .home__title,
 .home__subtitle {
-  margin-bottom: 50px;
+  line-height: 90px;
   text-align: center;
 
   color: $work-background-color;
+
+  @include respond('slim') {
+    font-size: 32px;
+    line-height: 50px;
+  }
 }
 
 .home__buttons {
+  margin-top: 50px;
   text-align: center;
 
   @include respond('slim') {
