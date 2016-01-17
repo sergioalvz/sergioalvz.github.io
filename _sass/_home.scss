@@ -38,17 +38,14 @@
 }
 
 .home__subtitle {
-  font-size: 72px;
+  font-size: 48px;
   font-weight: 700;
   text-transform: uppercase;
 }
 
-.home__subtitle__adjective {
-  font-family: $handwriting-font-family;
-}
-
 .home__title,
 .home__subtitle {
+  letter-spacing: -2px;
   line-height: 90px;
   text-align: center;
 
