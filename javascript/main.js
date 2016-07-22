@@ -1,6 +1,4 @@
-$( '[go-to]' ).click(function(event) {
-  event.preventDefault();
-
+$( '[go-to]' ).click(function() {
   var target = $(this).attr('go-to');
   var $target = $(target);
 
