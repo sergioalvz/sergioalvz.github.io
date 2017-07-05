@@ -9,6 +9,22 @@
   }
 }
 
+.panel__nav-btn {
+  float: right;
+  margin-right: 10px;
+
+  font-family: $sans-serif-font-family;
+  text-transform: uppercase;
+
+  @include respond('slim') {
+    display: none;
+  }
+
+  &:first-of-type {
+    margin-right: 0;
+  }
+}
+
 .panel__title {
   font-family: $sans-serif-font-family;
   font-size: 48px;
