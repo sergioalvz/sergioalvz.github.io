@@ -16,11 +16,3 @@ $btn-size: ($btn-padding-size * 2) + ($btn-border-size * 2) + $btn-font-size;
 
   transition: background-color 0.1s ease-in;
 }
-
-.btn--is-large {
-  padding: 20px 50px;
-
-  @include respond('slim') {
-    padding: 15px 35px;
-  }
-}
