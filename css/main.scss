@@ -9,10 +9,10 @@
 
 @import 'mixins';
 
-@import 'btn';
-@import 'nav-btn';
-@import 'panel';
+@import 'components/btn';
+@import 'components/nav-btn';
+@import 'components/panel';
 
-@import 'home';
-@import 'work';
-@import 'about';
+@import 'modules/home';
+@import 'modules/work';
+@import 'modules/about';
