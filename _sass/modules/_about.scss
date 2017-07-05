@@ -26,15 +26,24 @@
 }
 
 .about__content {
-  display: flex;
-  flex-direction: column;
   height: calc(100% - #{$btn-size});
-  width: 100%;
 }
 
 .about__title,
 .about__title__underscore {
   color: $work-background-color;
+}
+
+.about__background {
+  display: inline-block;
+  margin-bottom: 15px;
+  padding: 10px;
+
+  border-radius: 3px;
+
+  @include respond('slim') {
+    background-color: rgba($home-background-color, 0.5);
+  }
 }
 
 .about__text {
@@ -43,10 +52,6 @@
 
 .about__text__highlight {
   padding: 0;
-}
-
-.about__spacer {
-  flex: 1;
 }
 
 .about__links {
@@ -75,22 +80,6 @@
   color: $work-background-color;
   text-decoration: underline;
   text-decoration-skip: ink;
-}
-
-%base-footer-styles {
-  color: lighten($about-background-color, 50%);
-  font-family: $sans-serif-font-family;
-  font-weight: 300;
-}
-
-.about__footer {
-  @extend %base-footer-styles;
-
-  font-size: 12px;
-
-  @include respond('slim') {
-    margin-top: 20px;
-  }
 }
 
 .about .panel__nav-btn {
