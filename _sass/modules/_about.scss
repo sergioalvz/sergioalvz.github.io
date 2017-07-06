@@ -39,8 +39,6 @@
   margin-bottom: 15px;
   padding: 10px;
 
-  border-radius: 3px;
-
   @include respond('slim') {
     background-color: rgba($home-background-color, 0.5);
   }
