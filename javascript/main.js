@@ -1,6 +1,10 @@
-$( '[go-to]' ).click(function() {
-  var target = $(this).attr('go-to');
-  var $target = $(target);
+function onGoToClick(event) {
+  const target = event.currentTarget.dataset.goTo;
+  const $target = document.querySelector(target);
 
-  $( 'html, body' ).animate({ scrollTop: $target.offset().top }, 200);
-});
+  Velocity($target, "scroll");
+}
+
+document.querySelectorAll('[data-go-to]').forEach((node) => node.addEventListener('click', onGoToClick));
+
+
