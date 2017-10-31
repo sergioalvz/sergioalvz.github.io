@@ -2,11 +2,6 @@
   min-height: calc(700px - 40px);
   height: calc(100vh - 40px);
   padding: 20px;
-
-  @include respond('slim') {
-    min-height: 0;
-    height: auto;
-  }
 }
 
 .panel__nav-btn {
@@ -15,10 +10,6 @@
 
   font-family: $sans-serif-font-family;
   text-transform: uppercase;
-
-  @include respond('slim') {
-    display: none;
-  }
 
   &:first-of-type {
     margin-right: 0;
@@ -33,11 +24,6 @@
   margin-top: 30px;
 
   text-transform: uppercase;
-
-  @include respond('slim') {
-    font-size: 32px;
-    margin-top: 30px;
-  }
 }
 
 .panel__title__underscore {
@@ -55,10 +41,6 @@
   font-weight: 100;
   line-height: 30px;
 
-  @include respond('slim') {
-    font-size: 18px;
-  }
-
   &:not(:last-of-type) {
     margin-bottom: 15px;
   }
@@ -70,14 +52,28 @@
   font-weight: 100;
   line-height: 30px;
   margin-bottom: 15px;
-
-  @include respond('slim') {
-    font-size: 18px;
-  }
 }
 
-.panel__text__highlight {
-  padding: 0 8px;
+@include respond('slim') {
+  .panel {
+    min-height: 0;
+    height: auto;
+  }
 
-  font-weight: 700;
+  .panel__nav-btn {
+    display: none;
+  }
+
+  .panel__title {
+    font-size: 32px;
+    margin-top: 30px;
+  }
+
+  .panel__text {
+    font-size: 18px;
+  }
+
+  .panel__link {
+    font-size: 18px;
+  }
 }

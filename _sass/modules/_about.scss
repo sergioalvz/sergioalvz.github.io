@@ -1,6 +1,9 @@
 $about-background-image-breakpoint: 1024px;
 
 .about {
+  --highlight-background-color: $work-background-color;
+  --highlight-color: $home-background-color;
+
   min-height: 700px;
   height: 100vh;
   padding: 0;
@@ -33,10 +36,6 @@ $about-background-image-breakpoint: 1024px;
 
 .about__text {
   color: $work-background-color;
-}
-
-.about__text__highlight {
-  padding: 0;
 }
 
 .about__links {

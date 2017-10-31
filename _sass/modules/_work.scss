@@ -1,4 +1,7 @@
 .work {
+  --highlight-background-color: $about-background-color;
+  --highlight-color: $work-background-color;
+
   background-color: $work-background-color;
 }
 
@@ -13,11 +16,6 @@
 
 .work__text {
   color: $about-background-color;
-}
-
-.work__text__highlight {
-  background-color: $about-background-color;
-  color: $work-background-color;
 }
 
 .work .panel__nav-btn {
