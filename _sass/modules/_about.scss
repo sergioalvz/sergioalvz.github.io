@@ -1,3 +1,5 @@
+$about-background-image-breakpoint: 1024px;
+
 .about {
   min-height: 700px;
   height: 100vh;
@@ -6,21 +8,12 @@
   background-image: url('../assets/images/sergio.jpg');
   background-position: left;
   background-size: cover;
-
-  @include respond('slim') {
-    min-height: 0;
-    height: auto;
-  }
 }
 
 .about__colorizer {
   height: calc(100% - 40px);
   padding: 20px;
   background-color: rgba($about-background-color, 0.2);
-
-  @include respond('slim') {
-    height: auto;
-  }
 }
 
 .about__content {
@@ -36,10 +29,6 @@
   display: inline-block;
   margin-bottom: 15px;
   padding: 10px;
-
-  @include respond('slim') {
-    background-color: rgba($home-background-color, 0.5);
-  }
 }
 
 .about__text {
@@ -52,10 +41,6 @@
 
 .about__links {
   display: flex;
-
-  @include respond('slim') {
-    justify-content: center;
-  }
 }
 
 .about__links__link {
@@ -86,4 +71,29 @@
   background-color: $work-background-color;
   border-color: $work-background-color;
   color: $home-background-color;
+}
+
+@include respond('slim') {
+  .about {
+    min-height: 0;
+    height: auto;
+  }
+
+  .about__colorizer {
+    height: auto;
+  }
+
+  .about__background {
+    background-color: rgba($home-background-color, 0.5);
+  }
+
+  .about__links {
+    justify-content: center;
+  }
+}
+
+@media only screen and (max-width: $about-background-image-breakpoint) and (orientation: portrait) {
+  .about {
+    background-position: center;
+  }
 }
