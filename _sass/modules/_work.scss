@@ -1,6 +1,6 @@
 .work {
-  --highlight-background-color: $about-background-color;
-  --highlight-color: $work-background-color;
+  --highlight-background-color: #{$about-background-color};
+  --highlight-color: #{$work-background-color};
 
   background-color: $work-background-color;
 }
