@@ -3,6 +3,7 @@ $about-background-image-breakpoint: 1024px;
 .about {
   --highlight-background-color: #{$work-background-color};
   --highlight-color: #{$home-background-color};
+  --link-color: #{$work-background-color};
 
   min-height: 700px;
   height: 100vh;
@@ -54,12 +55,6 @@ $about-background-image-breakpoint: 1024px;
   font-size: 24px;
   height: 24px;
   width: 24px;
-}
-
-.about__link {
-  color: $work-background-color;
-  text-decoration: underline;
-  text-decoration-skip: ink;
 }
 
 .about .panel__nav-btn {
