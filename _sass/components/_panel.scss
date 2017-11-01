@@ -8,9 +8,6 @@
   float: right;
   margin-right: 10px;
 
-  font-family: $sans-serif-font-family;
-  text-transform: uppercase;
-
   &:first-of-type {
     margin-right: 0;
   }
@@ -23,6 +20,7 @@
   letter-spacing: 3px;
   margin-top: 30px;
 
+  color: var(--panel-color);
   text-transform: uppercase;
 }
 
@@ -32,6 +30,8 @@
   margin: 10px 0 50px;
   text-align: left;
   width: 80px;
+
+  color: var(--panel-color);
 }
 
 .panel__text {
@@ -40,6 +40,8 @@
   font-size: 24px;
   font-weight: 100;
   line-height: 30px;
+
+  color: var(--panel-color);
 
   &:not(:last-of-type) {
     margin-bottom: 15px;

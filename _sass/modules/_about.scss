@@ -1,9 +1,16 @@
 $about-background-image-breakpoint: 1024px;
 
 .about {
+  --btn-color: #{$work-background-color};
+  --btn-hover-background-color: #{$work-background-color};
+  --btn-hover-color: #{$home-background-color};
+
   --highlight-background-color: #{$work-background-color};
   --highlight-color: #{$home-background-color};
+
   --link-color: #{$work-background-color};
+
+  --panel-color: #{$work-background-color};
 
   min-height: 700px;
   height: 100vh;
@@ -24,19 +31,10 @@ $about-background-image-breakpoint: 1024px;
   height: calc(100% - #{$btn-size});
 }
 
-.about__title,
-.about__title__underscore {
-  color: $work-background-color;
-}
-
 .about__background {
   display: inline-block;
   margin-bottom: 15px;
   padding: 10px;
-}
-
-.about__text {
-  color: $work-background-color;
 }
 
 .about__links {
@@ -55,16 +53,6 @@ $about-background-image-breakpoint: 1024px;
   font-size: 24px;
   height: 24px;
   width: 24px;
-}
-
-.about .panel__nav-btn {
-  color: $work-background-color;
-}
-
-.about .panel__nav-btn:hover {
-  background-color: $work-background-color;
-  border-color: $work-background-color;
-  color: $home-background-color;
 }
 
 @include respond('slim') {

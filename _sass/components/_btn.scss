@@ -11,8 +11,18 @@ $btn-size: ($btn-padding-size * 2) + ($btn-border-size * 2) + $btn-font-size;
   font-size: $btn-font-size;
   padding: $btn-padding-size;
 
+  background-color: var(--btn-background-color);
+  border-color: var(--btn-color);
+  color: var(--btn-color);
   cursor: pointer;
+  font-family: $sans-serif-font-family;
   text-decoration: none;
+  text-transform: uppercase;
 
   transition: background-color 0.1s ease-in;
+}
+
+.btn:hover {
+  background-color: var(--btn-hover-background-color);
+  color: var(--btn-hover-color);
 }

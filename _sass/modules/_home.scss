@@ -9,10 +9,6 @@
   display: table;
   height: 100%;
   width: 100%;
-
-  @include respond('slim') {
-    margin-top: 100px;
-  }
 }
 
 .home__wrapper__content {
@@ -21,10 +17,12 @@
 }
 
 .home__talk {
+  --btn-color: #{$work-background-color};
+  --btn-hover-color: #{$work-background-color};
+
   float: right;
 
-  color: $work-background-color;
-  text-decoration: none;
+  text-transform: capitalize;
 }
 
 .home__title {
@@ -50,41 +48,42 @@
   text-align: center;
 
   color: $work-background-color;
-
-  @include respond('slim') {
-    font-size: 32px;
-    line-height: 50px;
-  }
 }
 
 .home__buttons {
   margin-top: 50px;
   text-align: center;
-
-  @include respond('slim') {
-    margin-bottom: 30px;
-  }
 }
 
 .home__buttons__button {
+  --btn-color: #{$complementary-color};
+  --btn-hover-background-color: #{$complementary-color};
+  --btn-hover-color: #{$home-background-color};
+
   padding: 20px 50px;
-
-  color: $complementary-color;
-  font-weight: 400;
-  text-transform: uppercase;
-
-  @include respond('slim') {
-    margin-top: 10px;
-    padding: 15px 35px;
-  }
 }
 
 .home__buttons__button:first-of-type {
   margin-right: 10px;
 }
 
-.home__buttons__button:hover {
-  background-color: $complementary-color;
-  border-color: $complementary-color;
-  color: $home-background-color;
+@include respond('slim') {
+  .home__wrapper {
+    margin-top: 100px;
+  }
+
+  .home__title,
+  .home__subtitle {
+    font-size: 32px;
+    line-height: 50px;
+  }
+
+  .home__buttons {
+    margin-bottom: 30px;
+  }
+
+  .home__buttons__button {
+    margin-top: 10px;
+    padding: 15px 35px;
+  }
 }
