@@ -31,14 +31,9 @@ $about-background-image-breakpoint: 1024px;
   height: calc(100% - #{$btn-size});
 }
 
-.about__background {
-  display: inline-block;
-  margin-bottom: 15px;
-  padding: 10px;
-}
-
 .about__links {
   display: flex;
+  margin-top: 20px;
 }
 
 .about__links__link {
@@ -63,9 +58,7 @@ $about-background-image-breakpoint: 1024px;
 
   .about__colorizer {
     height: auto;
-  }
 
-  .about__background {
     background-color: rgba($primary-color, 0.5);
   }
 
