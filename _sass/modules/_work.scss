@@ -1,16 +1,16 @@
 .work {
-  --btn-color: #{$about-background-color};
-  --btn-hover-background-color: #{$about-background-color};
-  --btn-hover-color: #{$work-background-color};
+  --btn-color: #{$complementary-color};
+  --btn-hover-background-color: #{$complementary-color};
+  --btn-hover-color: #{$secondary-color};
 
-  --highlight-background-color: #{$about-background-color};
-  --highlight-color: #{$work-background-color};
+  --highlight-background-color: #{$complementary-color};
+  --highlight-color: #{$secondary-color};
 
-  --link-color: #{$about-background-color};
+  --link-color: #{$complementary-color};
 
-  --panel-color: #{$about-background-color};
+  --panel-color: #{$complementary-color};
 
-  background-color: $work-background-color;
+  background-color: $secondary-color;
 }
 
 .work__content {

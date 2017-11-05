@@ -2,7 +2,7 @@
   font-family: $sans-serif-font-family;
   padding: 20px;
 
-  background-color: $home-background-color;
+  background-color: $primary-color;
 }
 
 .home__wrapper {
@@ -17,8 +17,8 @@
 }
 
 .home__talk {
-  --btn-color: #{$work-background-color};
-  --btn-hover-color: #{$work-background-color};
+  --btn-color: #{$secondary-color};
+  --btn-hover-color: #{$secondary-color};
 
   float: right;
 
@@ -47,7 +47,7 @@
   line-height: 90px;
   text-align: center;
 
-  color: $work-background-color;
+  color: $secondary-color;
 }
 
 .home__buttons {
@@ -56,9 +56,9 @@
 }
 
 .home__buttons__button {
-  --btn-color: #{$complementary-color};
-  --btn-hover-background-color: #{$complementary-color};
-  --btn-hover-color: #{$home-background-color};
+  --btn-color: #{$accent-color};
+  --btn-hover-background-color: #{$accent-color};
+  --btn-hover-color: #{$primary-color};
 
   padding: 20px 50px;
 }
