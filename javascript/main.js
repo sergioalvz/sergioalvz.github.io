@@ -59,11 +59,9 @@ class Router {
   run() {
     window.addEventListener('popstate', this.onPopState.bind(this));
 
-    setTimeout(() => {
-      const initial = this.path();
+    const initial = this.path();
 
-      this.navigate({ path: initial });
-    }, 0);
+    this.navigate({ path: initial });
   }
 
   scroll({ path }) {
@@ -90,5 +88,7 @@ const routes = {
 const router = new Router({ routes });
 const navigation = new Navigation({ router });
 
-router.run();
-navigation.run();
+setTimeout(() => {
+  router.run();
+  navigation.run();
+}, 0);
