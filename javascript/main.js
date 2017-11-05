@@ -44,17 +44,23 @@ class Router {
     this.scroll({ path });
   }
 
+  path() {
+    return window.location.hash.slice(1);
+  }
+
   push({ path }) {
     const state = path === '/' ? '' : path;
 
-    window.history.pushState({ path }, null, `#${state}`);
+    if (this.path() !== state) {
+      window.history.pushState({ path }, null, `#${state}`);
+    }
   }
 
   run() {
     window.addEventListener('popstate', this.onPopState.bind(this));
 
     setTimeout(() => {
-      const initial = window.location.hash.slice(1);
+      const initial = this.path();
 
       this.navigate({ path: initial });
     }, 0);
