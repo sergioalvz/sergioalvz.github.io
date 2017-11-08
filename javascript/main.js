@@ -1,3 +1,5 @@
+const NAVIGATION_NEXT_KEY = 'ArrowDown';
+const NAVIGATION_PREV_KEY = 'ArrowUp';
 const NAVIGATION_SELECTOR = '[data-go-to]';
 
 class Navigation {
@@ -9,11 +11,43 @@ class Navigation {
     this.router.navigate({ path: target });
   }
 
+  onKeyDown(event) {
+    switch (event.key) {
+      case NAVIGATION_NEXT_KEY:
+        event.preventDefault();
+        break;
+      case NAVIGATION_PREV_KEY:
+        event.preventDefault();
+        break;
+      default:
+        return;
+    }
+  }
+
+  onKeyUp(event) {
+    switch (event.key) {
+      case NAVIGATION_NEXT_KEY:
+        event.preventDefault();
+
+        this.router.next();
+        break;
+      case NAVIGATION_PREV_KEY:
+        event.preventDefault();
+
+        this.router.prev();
+        break;
+      default:
+        return;
+    }
+  }
+
   constructor({ router }) {
     this.router = router;
   }
 
   run() {
+    document.addEventListener('keyup', this.onKeyUp.bind(this));
+    document.addEventListener('keydown', this.onKeyDown.bind(this));
     document.querySelectorAll(NAVIGATION_SELECTOR).forEach(this.bindEventTo.bind(this));
   }
 
@@ -24,9 +58,9 @@ class Navigation {
 
 class Router {
   onPopState(event) {
-    const path = event.state;
+    const pathObj = event.state;
 
-    this.scroll(path);
+    this.scroll(pathObj);
   }
 
   constructor({ routes }) {
@@ -34,34 +68,60 @@ class Router {
   }
 
   fallbackRoute() {
-    const ROOT = '/';
+    const ROOT = '';
 
     return this.routes[ROOT];
   }
 
-  navigate({ path }) {
-    this.push({ path });
+  move({ direction }) {
+    const routeName = this.path();
+    const to = (this.routes[routeName] || {})[direction];
+
+    this.navigate({ path: to });
+  }
+
+  navigate({ path, replace = false }) {
+    if (!path && path !== '') {
+      return;
+    }
+
+    if (replace) {
+      this.replace({ path });
+    } else {
+      this.push({ path });
+    }
+
     this.scroll({ path });
+  }
+
+  next() {
+    this.move({ direction: 'next' });
   }
 
   path() {
     return window.location.hash.slice(1);
   }
 
-  push({ path }) {
-    const state = path === '/' ? '' : path;
+  prev() {
+    this.move({ direction: 'prev' });
+  }
 
-    if (this.path() !== state) {
-      window.history.pushState({ path }, null, `#${state}`);
+  push({ path }) {
+    if (this.path() !== path) {
+      window.history.pushState({ path }, null, `#${path}`);
     }
   }
 
-  run() {
-    window.addEventListener('popstate', this.onPopState.bind(this));
+  replace({ path }) {
+    window.history.replaceState({ path }, null, `#${path}`);
+  }
 
+  run() {
     const initial = this.path();
 
-    this.navigate({ path: initial });
+    this.navigate({ path: initial, replace: true });
+
+    window.addEventListener('popstate', this.onPopState.bind(this));
   }
 
   scroll({ path }) {
@@ -74,14 +134,20 @@ class Router {
 }
 
 const routes = {
-  '/': {
-    anchor: '.js-home'
+  '': {
+    anchor: '.js-home',
+    next: 'work',
+    prev: null
   },
   'work': {
-    anchor: '.js-work'
+    anchor: '.js-work',
+    next: 'about',
+    prev: ''
   },
   'about': {
-    anchor: '.js-about'
+    anchor: '.js-about',
+    next: null,
+    prev: 'work'
   }
 };
 
