@@ -31,25 +31,6 @@ $about-background-image-breakpoint: 1024px;
   height: calc(100% - #{$btn-size});
 }
 
-.about__links {
-  display: flex;
-  margin-top: 20px;
-}
-
-.about__links__link {
-  padding: 10px 15px;
-
-  background-color: $secondary-color;
-  color: $primary-color;
-}
-
-.about__links__link__icon {
-  display: inline-block;
-  font-size: 24px;
-  height: 24px;
-  width: 24px;
-}
-
 @include respond('slim') {
   .about {
     min-height: 0;
@@ -60,10 +41,6 @@ $about-background-image-breakpoint: 1024px;
     height: auto;
 
     background-color: rgba($primary-color, 0.5);
-  }
-
-  .about__links {
-    justify-content: center;
   }
 }
 

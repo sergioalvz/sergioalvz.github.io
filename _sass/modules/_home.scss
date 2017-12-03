@@ -6,14 +6,12 @@
 }
 
 .home__wrapper {
-  display: table;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
   height: 100%;
+  justify-content: center;
   width: 100%;
-}
-
-.home__wrapper__content {
-  display: table-cell;
-  vertical-align: middle;
 }
 
 .home__talk {
@@ -50,6 +48,14 @@
   color: $secondary-color;
 }
 
+.home__bicons {
+  --bicon-bg-color: #{$secondary-color};
+  --bicon-color: #{$primary-color};
+
+  display: flex;
+  margin-top: 50px;
+}
+
 .home__buttons {
   margin-top: 50px;
   text-align: center;
@@ -78,12 +84,11 @@
     line-height: 50px;
   }
 
-  .home__buttons {
-    margin-bottom: 30px;
+  .home__bicons {
+    margin: 50px 0;
   }
 
-  .home__buttons__button {
-    margin-top: 10px;
-    padding: 15px 35px;
+  .home__buttons {
+    display: none;
   }
 }

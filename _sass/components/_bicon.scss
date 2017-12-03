@@ -1,0 +1,16 @@
+:root {
+  --bicon-size: 24px;
+}
+
+.bicon {
+  padding: 10px 15px;
+  background-color: var(--bicon-bg-color);
+  color: var(--bicon-color);
+}
+
+.bicon__icon {
+  display: inline-block;
+  font-size: var(--bicon-size);
+  height: var(--bicon-size);
+  width: var(--bicon-size);
+}
