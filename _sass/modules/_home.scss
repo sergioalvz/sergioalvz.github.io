@@ -25,17 +25,13 @@
 
 .home__title {
   font-size: 72px;
-  font-weight: 100;
-  text-transform: uppercase;
-}
-
-.home__title__strong {
   font-weight: 700;
+  text-transform: uppercase;
 }
 
 .home__subtitle {
   font-size: 48px;
-  font-weight: 700;
+  font-weight: 100;
   text-transform: uppercase;
 }
 
@@ -73,7 +69,7 @@
   margin-right: 10px;
 }
 
-@include respond('slim') {
+@include respond("slim") {
   .home__wrapper {
     margin-top: 100px;
   }
